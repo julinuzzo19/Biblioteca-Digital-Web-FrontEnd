@@ -10,19 +10,32 @@ class Libros
         this.stock=stock;
     }
 }
-
-
 function getlibros()    
 {  
     fetch(`https://localhost:44366/api/Libros`)
     .then(response => response.json())
     .then(lista => {mostrardatos(lista);})
-}
-    
+} 
+
+function getlibrosbyinput(dato)    
+{  
+    fetch(`https://localhost:44366/api/Libros`)
+    .then(response => response.json())
+    .then(lista => {
+        
+        for(let i of lista)
+        {
+            if(dato==i.autor || dato==i.titulo)
+                {mostrarlibro(i);}
+        }     
+}) }
+
+
+
 function mostrardatos(lista)
 {
     for(let i of lista)
-    {
+    {        
         var fila=i;
         if(fila.stock>0)
         {      
@@ -38,13 +51,29 @@ function mostrardatos(lista)
             
             `
             place.appendChild(element);
-        }
+        }          
     }
 }
 
 getlibros();
 
 
+function mostrarlibro(lista)
+{   
+        const place=document.getElementById("tbody2");
+        const element = document.createElement("tr");
+        alert("Hola");
+        element.innerHTML = 
+        `                                     
+        <th id="filalibro" scope="row">${lista.isbn}</th>
+        <td id="filalibro">${lista.titulo}</td>
+        <td id="filalibro">${lista.autor}</td>
+        <td id="filalibro">${lista.stock}</td>
+        <td><img id="imagen" src="${lista.imagen}"></td>
+        
+        `
+        place.appendChild(element);  
+}
 
 
 
@@ -53,18 +82,22 @@ getlibros();
 
 
 
-// addProduct(product) {
-//     const productList = document.getElementById("product-list");
-//     const element = document.createElement("div");
-//     element.innerHTML = `
-//             <div class="card text-center mb-4">
-//                 <div class="card-body">
-//                     <strong>Product</strong>: ${product.name} -
-//                     <strong>Price</strong>: ${product.price} - 
-//                     <strong>Year</strong>: ${product.year}
-//                     <a href="#" class="btn btn-danger" name="delete">Delete</a>
-//                 </div>
-//             </div>
-//         `;
-//     productList.appendChild(element);
-//   }
+
+
+
+const ele=document.getElementById("formsearchbook").addEventListener("submit",function(e){
+    e.preventDefault();
+var autor=document.getElementById("autor").value;
+var titulo=document.getElementById("titulo").value;
+console.log(autor);
+console.log(titulo);
+getlibrosbyinput(autor);
+getlibrosbyinput(titulo)
+
+})
+
+
+
+
+
+

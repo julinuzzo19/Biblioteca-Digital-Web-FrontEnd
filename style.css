@@ -1,29 +1,108 @@
-#body
-{
-    background-color:black;
-    color: white;
-    margin-top: 100px;
+#divdata
+{  
+    color: white; 
     text-align: center;       
-}
-#subtitle
-{
-
-    margin-top: 40px;
 }
 .table
 {
-    background-color: white;
-
+    background-color: blanchedalmond;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0%; 
 }
 #imagen
 {
-    width: 80px; 
-    height: 80px;
+    width: 200px; 
+    height: 200px;
 
 }
 #filalibro
 {
-   font-size: xx-large;
+   font-size: large;
    font-family: cursive;
+
+}
+
+#imgheader
+{
+    width: 100%; 
+}
+#infopagina
+{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: chocolate;
+    margin-bottom: 0px;
+}
+#footer
+{
+text-align: center;
+background-color: black;
+color: white;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+#nav
+{
+    font-size: 120%;
+    font-style: italic;
+}
+.nav-link
+{
+margin-right: 10px;
+margin-left: 70px;
+}
+
+#formsearchbook
+{
+
+    font-size:170%;
+    width: 500px;
+
+}
+.form-control
+{
+    font-size:50%;
+
+}
+.container
+{
+background-color: chocolate;
+float: left;
+width: 570px;
+height: 235px;
+
+
+}
+.container-md
+{
+    text-align: center;
+    background-color: chocolate;
+    float: right;
+    padding-bottom: 206px;
+    width: 599px;
+}
+.table2
+{
+    width: 100%;    
+}
+#footer2
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#imgsearchbook
+{
+    width: 180px;
+    height: 235px
+
+}
+#btnsearch
+{
+font-size: large;
+margin-left: 200px;
+width: 100px;
 
 }
