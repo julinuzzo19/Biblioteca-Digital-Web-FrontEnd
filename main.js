@@ -17,7 +17,7 @@ function getlibros()
     .then(lista => {mostrardatos(lista);})
 } 
 
-function getlibrosbyinput(dato)    
+function getlibrosbyinput(autor,titulo)    
 {  
     fetch(`https://localhost:44366/api/Libros`)
     .then(response => response.json())
@@ -25,8 +25,9 @@ function getlibrosbyinput(dato)
         
         for(let i of lista)
         {
-            if(dato==i.autor || dato==i.titulo)
+            if(autor==i.autor || titulo==i.titulo)
                 {mostrarlibro(i);}
+            
         }     
 }) }
 
@@ -60,19 +61,21 @@ getlibros();
 
 function mostrarlibro(lista)
 {   
+    
         const place=document.getElementById("tbody2");
         const element = document.createElement("tr");
-        alert("Hola");
+        var elem=0;
         element.innerHTML = 
         `                                     
         <th id="filalibro" scope="row">${lista.isbn}</th>
         <td id="filalibro">${lista.titulo}</td>
         <td id="filalibro">${lista.autor}</td>
         <td id="filalibro">${lista.stock}</td>
-        <td><img id="imagen" src="${lista.imagen}"></td>
+        <td><img id="imagen2" src="${lista.imagen}"></td>
         
         `
-        place.appendChild(element);  
+        place.appendChild(element);
+             
 }
 
 
@@ -89,10 +92,8 @@ const ele=document.getElementById("formsearchbook").addEventListener("submit",fu
     e.preventDefault();
 var autor=document.getElementById("autor").value;
 var titulo=document.getElementById("titulo").value;
-console.log(autor);
-console.log(titulo);
-getlibrosbyinput(autor);
-getlibrosbyinput(titulo)
+
+getlibrosbyinput(autor,titulo);
 
 })
 
