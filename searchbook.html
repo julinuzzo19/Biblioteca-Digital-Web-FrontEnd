@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public\css\style.css">
     <title>Biblioteca Digital</title>
 </head>
 <body>
-<header>
-    <img id="imgheader" src="Images/logo.jpg"> 
-</header>
+  <header>
+    <div class="divtitle"><img id="imgheader" src="Images/logo.jpg"></div> 
+     <div class="divsidetitle"> <h3 id="h3title"></h3></div>
+   
+   
+     
+   </header>
     
 
     <div id="nav"> 
@@ -29,15 +33,14 @@
               <li class="nav-item">
                 <strong><a class="nav-link" href="#">Realizar un pedido</a></strong>
               </li>
-              <li class="nav-item">
-                <strong> <a class="nav-link" href="#">Contacto</a></strong>
-              </li>
+              
             </ul>
           </div>
         </nav>
       </div>
       <div ><p id="infopagina">Buscar Libro</p></div>
     
+      <div class="divsearch">
       <div class="container"> 
       <form id="formsearchbook">
         <div class="form-group">
@@ -47,12 +50,12 @@
         <div class="form-group">
           <label for="formGroupExampleInput2">Autor</label>
           <input id="autor" type="text" class="form-control" placeholder="Autor">
-          <input id="btnsearch" type="submit" ></input>
+          <input id="btnsearch" type="submit" value="Buscar"></input>
         </div>
         
     </form>
     </div>
-    <img id="imgsearchbook" src="Images/searchbookimg.png" >
+    <div id="divimgsearch"><img id="imgsearchbook" src="Images/searchbookimg.png" ></div>
      <div class="container-md">
             <table>
                 <thead>
@@ -69,13 +72,16 @@
                 </tbody>                     
             </table>       
      </div>
-    
-    <div id="divfooter">    
-        <footer class="footer2">
-      <h2 class="footer2">Municipalidad Carmen de Areco</h2>
-        <h4 class="footer2">Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</h4>
-   </footer> </div>
-    <script src="main.js"></script>
+    </div>
+    <div id="divfooter">
+      <footer class="footer">
+        <p>Municipalidad Carmen de Areco</p>
+        <p>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</p>
+      </footer>
+      </div>
+    <script type="module" src="public\js\main.js"></script>
+    <script type="module" src="public\js\LibroService.js"></script>
+    <script type="module" src="public\js\Constants.js"></script>
 </body>
 
 </html>

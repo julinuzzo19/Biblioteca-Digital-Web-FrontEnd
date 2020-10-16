@@ -5,13 +5,18 @@
     <title>Biblioteca Digital</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public\css\style.css">
 
 </head>
 <body> 
 <header>
-  <img id="imgheader" src="Images/logo.jpg">    
+ <div class="divtitle"><img id="imgheader" src="Images/logo.jpg"></div> 
+  <div class="divsidetitle"> <h3 id="h3title"></h3></div>
+
+
+  
 </header>
+
 <div id="nav"> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
 
@@ -29,9 +34,7 @@
         <li class="nav-item">
           <strong><a class="nav-link" href="#">Realizar un pedido</a></strong>
         </li>
-        <li class="nav-item">
-          <strong> <a class="nav-link" href="#">Contacto</a></strong>
-        </li>
+        
       </ul>
     </div>
   </nav>
@@ -59,13 +62,15 @@
 
 
 <div id="divfooter">
-<footer id="footer">
-  <h2>Municipalidad Carmen de Areco</h2>
-  <h4>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</h4>
+<footer class="footer">
+  <p>Municipalidad Carmen de Areco</p>
+  <p>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</p>
 </footer>
 </div>
-
+<script type="module" src="public\js\main.js"></script>
+<script type="module" src="public\js\LibroService.js"></script>
+<script type="module" src="public\js\Constants.js"></script>
 </body>
-<script src="main.js"></script>
+
 
 </html>

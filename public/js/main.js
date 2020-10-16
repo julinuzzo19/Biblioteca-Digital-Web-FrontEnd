@@ -1,39 +1,9 @@
-class Libros
-{
-    constructor(isbn,titulo,autor,editorial,imagen,stock)
-    {
-        this.isbn=isbn;
-        this.titulo=titulo;
-        this.autor=autor;
-        this.editorial=editorial;
-        this.imagen=imagen;
-        this.stock=stock;
-    }
-}
-function getlibros()    
-{  
-    fetch(`https://localhost:44366/api/Libros`)
-    .then(response => response.json())
-    .then(lista => {mostrardatos(lista);})
-} 
 
-function getlibrosbyinput(autor,titulo)    
-{  
-    fetch(`https://localhost:44366/api/Libros`)
-    .then(response => response.json())
-    .then(lista => {
-        
-        for(let i of lista)
-        {
-            if(autor==i.autor || titulo==i.titulo)
-                {mostrarlibro(i);}
-            
-        }     
-}) }
+import * as Service from "./LibroService.js";
 
 
 
-function mostrardatos(lista)
+export function mostrardatos(lista)
 {
     for(let i of lista)
     {        
@@ -56,15 +26,14 @@ function mostrardatos(lista)
     }
 }
 
-getlibros();
+Service.getlibros();
 
 
-function mostrarlibro(lista)
+export function mostrarlibro(lista)
 {   
     
         const place=document.getElementById("tbody2");
         const element = document.createElement("tr");
-        var elem=0;
         element.innerHTML = 
         `                                     
         <th id="filalibro" scope="row">${lista.isbn}</th>
@@ -75,27 +44,61 @@ function mostrarlibro(lista)
         
         `
         place.appendChild(element);
+        
+        
              
 }
 
 
+function Bienvenidacliente(cliente)
+{
+    const place=document.getElementById("h3title");
+    const element = document.createElement("h3");
+    element.innerHTML=
+    `    
+   <p> Bienvenido</p>
+   <p id="titlecliente"> ${cliente.nombre}!</p>
+    `
+    place.appendChild(element);
+    
+}
+
+function getCliente()    
+{  
+    fetch(`https://localhost:44366/api/Clientes/1`)
+    .then(response => response.json())
+    .then(cliente => {Bienvenidacliente(cliente);})
+} 
 
 
 
+window.onload= function()
+{
+    getCliente();
+
+    /* const elem=document.getElementById("formsearchbook").addEventListener("submit",function(e){
+        e.preventDefault();
+    var autor=document.getElementById("autor").value;
+    var titulo=document.getElementById("titulo").value;
+    
+    getlibrosbyinput(autor,titulo);
+    
+    }) */
 
 
 
+}
 
-
-
-const ele=document.getElementById("formsearchbook").addEventListener("submit",function(e){
+window.onsubmit=function(e)
+{
     e.preventDefault();
-var autor=document.getElementById("autor").value;
-var titulo=document.getElementById("titulo").value;
+    var autor=document.getElementById("autor").value;
+    var titulo=document.getElementById("titulo").value;
+    
+    Service.getlibrosbyinput(autor,titulo);
 
-getlibrosbyinput(autor,titulo);
+}
 
-})
 
 
 
