@@ -22,11 +22,36 @@ margin: 0;
     height: 200px;
 
 }
-#filalibro
+.filalibroindex
 {
-   font-size: large;
+   font-size: larger;
    font-family: cursive;
+   padding-top: 80px;
 
+   
+}
+#filalibrosearchbook
+{
+
+    font-size: medium;
+    font-family: cursive;
+
+}
+.headfilasearchbook
+{
+    font-size: medium;
+    font-family: cursive;
+
+}
+.headfilaindex
+{
+    font-size: large;
+    font-family: cursive;
+}
+.btn 
+{
+    margin-left: 10px;
+    margin-top: 100px;
 }
 /* Estilos del header */
 header
