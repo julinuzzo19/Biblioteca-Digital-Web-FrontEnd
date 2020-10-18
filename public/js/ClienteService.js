@@ -12,10 +12,12 @@ export function Bienvenidacliente(cliente)
     place.appendChild(element);
     
 }
-
+/* Cliente creado y seleccionado por defecto */
 export function getCliente()    
 {  
     fetch(`https://localhost:44366/api/Clientes/1`)
     .then(response => response.json())
-    .then(cliente => {Bienvenidacliente(cliente);})
+    .then(cliente => {
+        Bienvenidacliente(cliente);     
+    })
 } 

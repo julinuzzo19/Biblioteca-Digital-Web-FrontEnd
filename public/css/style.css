@@ -85,13 +85,10 @@ padding-top: 50px;
 }
 #titlecliente
 {
-    font-style: italic;
-
+    font-size: 150%;
+    font-family:  cursive;
 }
-
-
 /*                   */
-
 
 
 #infopagina
@@ -122,15 +119,16 @@ height: 7vh;
 }
 #nav
 {
-    font-size: 120%;
-    font-style: italic;
-}
-.nav-link
-{
-margin-right: 10px;
-margin-left: 70px;
+    font-size: 160%;
+    font-family: sans-serif;
+
 }
 
+.nav-link
+{
+margin-left: 170px;
+
+}
 #formsearchbook
 {
 
@@ -210,3 +208,5 @@ width: 100px;
     height: 100px;
     margin-top: 10px;
 }
+
+

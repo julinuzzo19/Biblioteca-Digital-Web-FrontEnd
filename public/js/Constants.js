@@ -13,9 +13,8 @@ export class Libro
 }
 export class Cliente
 {
-    constructor(id,nombre,apellido,dni,email)
+    constructor(nombre,apellido,dni,email)
     {
-        this.id=id;
         this.nombre=nombre;
         this.apellido=apellido;
         this.dni=dni;

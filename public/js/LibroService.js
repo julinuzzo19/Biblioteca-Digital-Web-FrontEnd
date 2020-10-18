@@ -40,44 +40,96 @@ export function mostrardatos(lista)
               <td class="filalibroindex">${fila.autor}</td>
               <td class="filalibroindex">${fila.stock}</td>
               <td><img id="imagen" src="${fila.imagen}"></td>
-              <input type="button" id="${fila.isbn}"   class="btn btn-lg btn-primary" value="Alquilar"></input>
-              <input type="button" id="btnreservar" onclick="alert('Reservado');"  class="btn btn-secondary btn-lg" value="Reservar"></input> 
+              <input type="button" id="${fila.isbn+'alquiler'}"   class="btn btn-lg btn-primary" value="Alquilar"></input>
+              <input type="button" id="${fila.isbn+'reserva'}"  class="btn btn-secondary btn-lg" value="Reservar"></input> 
             `
+           
             place.appendChild(element);      
         }    
     }
-        
+        /* Realizar Reserva por boton */
+     var botonreserva1=document.getElementById("1reserva");
+     if(botonreserva1!=null){
+     botonreserva1.onclick=function()
+    {
+        AlquilerService.reservar("1");
+        alert("Reserva realizada.");        
+    } }
 
-    var boton=document.getElementById("1");
+    var botonreserva2=document.getElementById("2reserva");
+    if(botonreserva2!=null){
+    botonreserva2.onclick=function()
+    {
+        AlquilerService.reservar("2");
+        alert("Reserva realizada.");                 
+    } }
+
+    var botonreserva3=document.getElementById("3reserva");
+    if(botonreserva3!=null){
+    botonreserva3.onclick=function()
+    {
+        AlquilerService.reservar("3");  
+        alert("Reserva realizada.");            
+    } }
+
+    var botonreserva4=document.getElementById("4reserva");
+    if(botonreserva4!=null){
+    botonreserva4.onclick=function()
+    {
+        AlquilerService.reservar("4");    
+        alert("Reserva realizada.");          
+    } }
+
+    var botonreserva5=document.getElementById("5reserva");
+    if(botonreserva5!=null){
+    botonreserva5.onclick=function()
+    {
+        AlquilerService.reservar("5");     
+        alert("Reserva realizada.");         
+    } }
+
+
+    /* Realizar alquiler por boton */
+    
+    var boton=document.getElementById("1alquiler");
+    if(boton!=null){
     boton.onclick=function()
     {
-    AlquilerService.alq("1");              
-    }
+    AlquilerService.alquilar("1");        
+    alert("Alquiler realizado.");      
+    }}
     
-    var boton2=document.getElementById("2");    
+    var boton2=document.getElementById("2alquiler");
+    if(boton2!=null){    
     boton2.onclick=function()
     {
-        alert(boton2.id);  
-        AlquilerService.alq("2");           
-    }
+        AlquilerService.alquilar("2");     
+        alert("Alquiler realizado.");           
+    }}
     
-    var boton3=document.getElementById("3");
+    var boton3=document.getElementById("3alquiler");
+    if(boton3!=null){
     boton3.onclick=function()
     {
-        AlquilerService.alq("3");               
-    }
+        AlquilerService.alquilar("3");    
+        alert("Alquiler realizado.");                
+    }}
     
-    var boton4=document.getElementById("4");
+    var boton4=document.getElementById("4alquiler");
+    if(boton4!=null){
     boton4.onclick=function()
     {
-        AlquilerService.alq("4");                
-    }
+        AlquilerService.alquilar("4");     
+        alert("Alquiler realizado.");                
+    }}
     
-    var boton5=document.getElementById("5");
+    var boton5=document.getElementById("5alquiler");
+    if(boton5!=null){
     boton5.onclick=function()
     {
-        AlquilerService.alq("5");            
-    }
+        AlquilerService.alquilar("5");          
+        alert("Alquiler realizado.");       
+    }}
    
 
 }

@@ -1,3 +1,4 @@
+import { getCliente } from "./ClienteService.js";
 import * as constants from "./Constants.js"
 
 
@@ -16,9 +17,18 @@ export function PostAlquiler(alquilerjson)
 }
 
 
-export var alq= function(isbn){
-
+export var alquilar= function(isbn)
+{
     var alquiler=new constants.Alquiler(1,isbn,"string","16/10/2020");
     var alquilerjson=JSON.stringify(alquiler);
    
-    PostAlquiler(alquilerjson);}
+    PostAlquiler(alquilerjson);
+}
+
+export var reservar= function(isbn)
+{
+    var reserva=new constants.Alquiler(1,isbn,"16/10/2020","string");
+    var reservajson= JSON.stringify(reserva);
+     
+    PostAlquiler(reservajson);
+}
