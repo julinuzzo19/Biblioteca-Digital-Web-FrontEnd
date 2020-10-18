@@ -7,7 +7,8 @@ import * as Constants from "./Constants.js"
 window.onload = () =>{
 
     LibroService.getlibros();
-    ClienteService.getCliente();   
+    ClienteService.getCliente(1);   
+    AlquilerService.GetAlquiler(1);
 }
 
 window.onsubmit=(event1) =>

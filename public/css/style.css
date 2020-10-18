@@ -15,37 +15,44 @@ margin: 0;
     width: 100%;
     text-align: center;
     margin-bottom: 0%; 
+    border: 3px solid chocolate;
 }
 #imagen
 {
     width: 200px; 
     height: 200px;
-
 }
 .filalibroindex
 {
    font-size: larger;
    font-family: cursive;
    padding-top: 80px;
-
-   
+   border: 3px solid chocolate;
 }
 #filalibrosearchbook
 {
-
+    border: 3px solid chocolate;
     font-size: medium;
     font-family: cursive;
 
 }
 .headfilasearchbook
 {
-    font-size: medium;
+    font-size: large;
     font-family: cursive;
-
+    padding-top: 10px;
+    border: 3px solid chocolate;
 }
 .headfilaindex
 {
-    font-size: large;
+    font-size: x-large;
+    font-family: cursive;
+    border: 3px solid chocolate;
+
+}
+.headfilaindex2
+{
+    font-size: x-large;
     font-family: cursive;
 }
 .btn 
@@ -89,8 +96,6 @@ padding-top: 50px;
     font-family:  cursive;
 }
 /*                   */
-
-
 #infopagina
 {
     display: block;
@@ -110,7 +115,11 @@ margin: 0;
 {
 
 background-color: black;
-height: 7vh;
+height: 8vh;
+margin: 0;
+
+
+
 }
 .footer p
 {
@@ -121,84 +130,76 @@ height: 7vh;
 {
     font-size: 160%;
     font-family: sans-serif;
-
 }
-
 .nav-link
 {
-margin-left: 170px;
-
+    margin-left: 170px;
 }
 #formsearchbook
 {
-
     font-size:170%;
     width: 500px;
-
 }
 .form-control
 {
     font-size:50%;
-
 }
 /* Search Book */
 .divsearch
 {
-    background-color: chocolate;
+    background-color: blanchedalmond;
 }
-
 .container
 {
-background-color: chocolate;
-float: left;
-width: 38vw;
-height: 38vh;
+    background-color: blanchedalmond;
+    float: left;
+    width: 38vw;
+    height: 38vh;
+    margin-top: 40px;
 }
 #formsearchbook
 {
     width: 40vw;
+    
 }
 .container-md
 {
     text-align: center;
-    background-color: chocolate;
+    background-color: blanchedalmond;
     float: right;
     overflow-y:scroll;
-
     box-sizing: border-box;
-    height:38vh;
+    height:45vh;
     width:41vw;
-
-
 }
 .container-md table
 {
- width: 100%;
-margin-left: 0px;    
-
+    width: 100%;
+    margin-left: 0px;   
+    border: 3px solid chocolate; 
 }
 #imgsearchbook
 {
     height: 235px;
     size: 80%;
     margin-left: 40px;
+    margin-top: 40px;
     display: inline-block;
-
     margin-right: 0px;
 }
 #divimgsearch
 {
-background-color: chocolate;
-display: inline-block;
-width: 18vw;
-height: 38vh;
+    background-color: blanchedalmond;
+    display: inline-block;
+    width: 18vw;
+    height: 45vh;
 
 }
 #btnsearch
 {
-font-size: large;
-margin-left: 200px;
-width: 100px;
+    font-size: large;
+    margin-left: 200px;
+    width: 100px;
 }
 /*                 */
 
@@ -209,4 +210,109 @@ width: 100px;
     margin-top: 10px;
 }
 
+/* Page Orders */
+#container-orders
+{
+    background-color: blanchedalmond;
+    display: inline-block;
+    height: 400px;
+    width: 48%;
+    float: left;
+    margin-left: 20px;
+    overflow-y: auto;
+    
+}
+#container-md-orders
+{
+    display: inline-block;
+    height: 400px;
+    width: 48%;
+    background-color: blanchedalmond;
+    float: right;
+    margin-right: 20px;
+    overflow-y:auto;
+    
+}
+#container-medium
+{
+    width:1%;
+    height: 400px;
+    display: inline-block;
+}
+.orderstitle
+{
+text-align: center;
+margin-top: 20px;
 
+}
+
+.tableordersalquiler
+{
+   width: 95%;
+   margin-left: 20px;
+   border: 3px solid chocolate;
+}
+.tableordersreserva
+{
+    width: 95%;
+    margin-left: 20px;
+    border: 3px solid chocolate;
+}
+.headfilaordersreserva
+{
+    font-size: large;
+    font-family: cursive;
+    padding-top: 10px;
+    text-align: center;
+    border: 3px solid chocolate;
+
+}
+.headfilaordersalquiler
+{
+    font-size: large;
+    font-family: cursive;
+    padding-top: 10px;
+    text-align: center;
+    border: 3px solid chocolate;
+    
+
+
+}
+.filalibroordersalquiler
+{
+    font-size: medium;
+    font-family: cursive;
+    padding-top: 30px;
+    text-align: center;
+    border: 3px solid chocolate;
+
+    
+}
+.filalibroordersreserva
+{
+    font-size: medium;
+    font-family: cursive;
+    padding-top: 20px;
+    text-align: center;
+    border: 3px solid chocolate;
+
+
+}
+#imagenorder
+{
+    height: 235px;
+    size: 80%;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+
+#bodyorders
+{
+background-color: chocolate;
+
+
+}

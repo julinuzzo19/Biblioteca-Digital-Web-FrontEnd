@@ -22,14 +22,19 @@ export class Cliente
     }
 
 }
+
+
 export class Alquiler
 {
-    constructor(clienteId,isbn,fechareserva,fechaalquiler)
+    constructor(clienteId,isbn,fechareserva,fechaalquiler,fechadevolucion)
     {
         this.clienteId=clienteId;
         this.isbn=isbn;
         this.fechareserva=fechareserva;
         this.fechaalquiler=fechaalquiler;
+        this.fechadevolucion=fechadevolucion;
     }
 
 }
+
+

@@ -10,7 +10,7 @@
     <title>Mis pedidos</title>
 
 </head>
-<body> 
+<body id="bodyorders"> 
     <header>
         <div class="divtitle"><img id="imgheader" src="Images/logo.jpg"></div> 
          <div class="divsidetitle"> <h3 id="h3title"></h3></div>     
@@ -37,37 +37,49 @@
       <div ><p id="infopagina">Mis pedidos</p></div>
     
     <div id="container-orders">
-
+      <h2 class="orderstitle">Mis Alquileres</h2>
+    
+      <div id="divtableorders">
+        <table class="tableordersalquiler">
+          <thead>
+            <tr>
+              <th class="headfilaordersalquiler" >ISBN</th>
+              <th class="headfilaordersalquiler" >Titulo</th>
+              <th class="headfilaordersalquiler" >Autor</th>
+              <th class="headfilaordersalquiler" >Fecha de Alquiler</th>
+              <th class="headfilaordersalquiler" >Fecha de Devolucion</th>
+            </tr> 
+          </thead>
+          <tbody id="tbodyalquiler">
+          </tbody>
+      </table>
+    </div>   
     </div>
+
+    <div id="container-medium"></div>
     
     <div id="container-md-orders">
-
-    </div>
+      <h2 class="orderstitle">Mis Reservas</h2> 
+    <div id="divtableorders">
+      <table class="tableordersreserva">
+        <thead>
+          <tr>
+            <th class="headfilaordersreserva" >ISBN</th>
+            <th class="headfilaordersreserva" >Titulo</th>
+            <th class="headfilaordersreserva" >Autor</th>
+            <th class="headfilaordersreserva" >Fecha de Reserva</th>
+          </tr> 
+        </thead>
+        <tbody id="tbodyreserva">
+        </tbody>
+    </table>
+  </div>
+     </div>
+    
+     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
     <div id="divfooter">
       <footer class="footer">

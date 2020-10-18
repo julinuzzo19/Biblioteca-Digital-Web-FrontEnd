@@ -13,9 +13,9 @@ export function Bienvenidacliente(cliente)
     
 }
 /* Cliente creado y seleccionado por defecto */
-export function getCliente()    
+export function getCliente(id)    
 {  
-    fetch(`https://localhost:44366/api/Clientes/1`)
+    fetch(`https://localhost:44366/api/Clientes/${id}`)
     .then(response => response.json())
     .then(cliente => {
         Bienvenidacliente(cliente);     
