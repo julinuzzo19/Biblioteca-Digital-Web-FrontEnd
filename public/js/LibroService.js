@@ -40,7 +40,7 @@ export function mostrardatos(lista)
               <td class="filalibroindex">${fila.autor}</td>
               <td class="filalibroindex">${fila.stock}</td>
               <td><img id="imagen" src="${fila.imagen}"></td>
-              <input type="button" id="btnalquilar${fila.isbn}"   class="btn btn-lg btn-primary" value="Alquilar"></input>
+              <input type="button" id="${fila.isbn}"   class="btn btn-lg btn-primary" value="Alquilar"></input>
               <input type="button" id="btnreservar" onclick="alert('Reservado');"  class="btn btn-secondary btn-lg" value="Reservar"></input> 
             `
             place.appendChild(element);      
@@ -48,36 +48,36 @@ export function mostrardatos(lista)
     }
         
 
-    var boton=document.getElementById("btnalquilar1");
+    var boton=document.getElementById("1");
+    boton.onclick=function()
+    {
+    AlquilerService.alq("1");              
+    }
     
-        boton.onclick=function()
-           {
-               alert(boton.id);             
-           }
-    var boton2=document.getElementById("btnalquilar2");
+    var boton2=document.getElementById("2");    
+    boton2.onclick=function()
+    {
+        alert(boton2.id);  
+        AlquilerService.alq("2");           
+    }
     
-        boton2.onclick=function()
-           {
-               alert(boton2.id);             
-           }
-    var boton3=document.getElementById("btnalquilar3");
-
+    var boton3=document.getElementById("3");
     boton3.onclick=function()
-        {
-            alert(boton3.id);             
-        }
-    var boton4=document.getElementById("btnalquilar4");
+    {
+        AlquilerService.alq("3");               
+    }
     
-        boton4.onclick=function()
-            {
-                alert(boton4.id);             
-            }
-    var boton5=document.getElementById("btnalquilar5");
-
+    var boton4=document.getElementById("4");
+    boton4.onclick=function()
+    {
+        AlquilerService.alq("4");                
+    }
+    
+    var boton5=document.getElementById("5");
     boton5.onclick=function()
-        {
-            alert(boton5.id);             
-        }
+    {
+        AlquilerService.alq("5");            
+    }
    
 
 }
