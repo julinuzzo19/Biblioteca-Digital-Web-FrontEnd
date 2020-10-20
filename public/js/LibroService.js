@@ -9,7 +9,7 @@ export function getlibros()
     .then(lista => {mostrardatos(lista);})
 } 
 
-export function getlibrosbyinput(autor,titulo)    
+export function getlibrosbyinput(tituloautor)    
 {  
     fetch(`https://localhost:44366/api/Libros`)
     .then(response => response.json())
@@ -17,7 +17,7 @@ export function getlibrosbyinput(autor,titulo)
         
         for(let i of lista)
         {
-            if(autor==i.autor || titulo==i.titulo)
+            if(tituloautor==i.autor || tituloautor==i.titulo)
                 {mostrarlibro(i);}        
         }
 }) 
@@ -152,9 +152,9 @@ export function mostrarlibro(lista)
 
 export function SearchByForm()
 {
-    var autor=document.getElementById("autor").value;
-    var titulo=document.getElementById("titulo").value;
+    var tituloautor=document.getElementById("tituloautor").value;
+   // var titulo=document.getElementById("titulo").value;
     
-    getlibrosbyinput(autor,titulo);
+    getlibrosbyinput(tituloautor);
 
 }
