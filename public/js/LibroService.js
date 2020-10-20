@@ -10,17 +10,24 @@ export function getlibros()
 } 
 
 export function getlibrosbyinput(tituloautor)    
-{  
-    fetch(`https://localhost:44366/api/Libros`)
+{     
+    fetch(`https://localhost:44366/api/Libros?titulo=${tituloautor}`)
     .then(response => response.json())
-    .then(lista => {
-        
+    .then(lista => {      
         for(let i of lista)
         {
-            if(tituloautor==i.autor || tituloautor==i.titulo)
+            if(tituloautor==i.titulo)
                 {mostrarlibro(i);}        
-        }
-}) 
+        }}) 
+          
+        fetch(`https://localhost:44366/api/Libros?autor=${tituloautor}`)
+    .then(response => response.json())
+    .then(lista => {      
+        for(let i of lista)
+        {
+            if(tituloautor==i.autor)
+                {mostrarlibro(i);}        
+        }}) 
 }
 
 export function mostrardatos(lista)

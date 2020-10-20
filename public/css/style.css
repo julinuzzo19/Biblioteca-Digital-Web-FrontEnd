@@ -140,19 +140,12 @@ margin: 0;
 {
     margin-left: 170px;
 }
-#formsearchbook
-{
-    font-size:170%;
-    width: 500px;
-}
-.form-control
-{
-    font-size:50%;
-}
+
 /* Search Book */
 .divsearch
 {
     background-color: blanchedalmond;
+    padding-top: 40px;
 }
 .container
 {
@@ -164,8 +157,26 @@ margin: 0;
 }
 #formsearchbook
 {
+    font-size:170%;
     width: 40vw;
-    
+}
+.form-control
+{
+    font-size:80%;
+    width: 400px; 
+}
+#titleform
+{
+font-size: larger;
+margin-bottom: 20px;
+
+}
+#btnsearch
+{
+    font-size: large;
+    margin-left: 145px;
+    margin-top: 30px;
+    width: 100px;
 }
 .container-md
 {
@@ -200,12 +211,7 @@ margin: 0;
     height: 45vh;
 
 }
-#btnsearch
-{
-    font-size: large;
-    margin-left: 200px;
-    width: 100px;
-}
+
 /*                 */
 
 #imagen2
