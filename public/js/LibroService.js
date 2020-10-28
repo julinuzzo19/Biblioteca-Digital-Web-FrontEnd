@@ -11,13 +11,16 @@ export function getlibros()
 
 export function getlibrosbyinput(tituloautor)    
 {     
+    let regex=/\w[tituloautor]+/;
+    
     fetch(`https://localhost:44366/api/Libros?titulo=${tituloautor}`)
     .then(response => response.json())
     .then(lista => {      
         for(let i of lista)
         {
-            if(tituloautor==i.titulo)
-                {mostrarlibro(i);}        
+            if(regex.test (i.titulo))
+                {mostrarlibro(i);
+                break;}        
         }}) 
           
         fetch(`https://localhost:44366/api/Libros?autor=${tituloautor}`)
@@ -25,7 +28,7 @@ export function getlibrosbyinput(tituloautor)
     .then(lista => {      
         for(let i of lista)
         {
-            if(tituloautor==i.autor)
+            if(regex.test(i.autor))
                 {mostrarlibro(i);}        
         }}) 
 }
