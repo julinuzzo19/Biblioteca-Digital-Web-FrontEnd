@@ -163,7 +163,6 @@ export function mostrarlibro(lista)
 export function SearchByForm()
 {
     var tituloautor=document.getElementById("tituloautor").value;
-   // var titulo=document.getElementById("titulo").value;
     
     getlibrosbyinput(tituloautor);
 
