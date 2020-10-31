@@ -70,9 +70,11 @@ export function MostrarAlquileres(lista)
 export var alquilar= function(isbn)
 {
    var fechaalquiler= new Date();
-   fechaalquiler=fechaalquiler.getDate()+"/"+fechaalquiler.getMonth()+"/"+fechaalquiler.getFullYear();
+   fechaalquiler=fechaalquiler.getDate()+"/"+(fechaalquiler.getMonth()+1)+"/"+fechaalquiler.getFullYear();
 
-    var alquiler=new constants.Alquiler(1,isbn,"",fechaalquiler,"");
+    var fecha=String(fechaalquiler);
+
+   var alquiler=new constants.Alquiler(1,isbn,"",fecha);
     var alquilerjson=JSON.stringify(alquiler);
    
     PostAlquiler(alquilerjson);
@@ -81,9 +83,12 @@ export var alquilar= function(isbn)
 export var reservar= function(isbn)
 {
     var fechareserva=new Date();
-    fechareserva=fechareserva.getDate()+"/"+fechareserva.getMonth()+"/"+fechareserva.getFullYear();
+
+   fechareserva=fechareserva.getDate()+"/"+(fechareserva.getMonth()+1)+"/"+fechareserva.getFullYear();
+  
+   var fecha=String(fechareserva);
     
-    var reserva=new constants.Alquiler(1,isbn,fechareserva,"","");
+    var reserva=new constants.Alquiler(1,isbn,fecha,"");
     var reservajson= JSON.stringify(reserva);
      
     PostAlquiler(reservajson);

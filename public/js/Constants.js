@@ -26,13 +26,12 @@ export class Cliente
 
 export class Alquiler
 {
-    constructor(clienteId,isbn,fechareserva,fechaalquiler,fechadevolucion)
+    constructor(clienteId,isbn,fechareserva,fechaalquiler)
     {
         this.clienteId=clienteId;
         this.isbn=isbn;
         this.fechareserva=fechareserva;
         this.fechaalquiler=fechaalquiler;
-        this.fechadevolucion=fechadevolucion;
     }
 
 }
