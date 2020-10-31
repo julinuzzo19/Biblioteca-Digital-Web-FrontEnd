@@ -1,4 +1,3 @@
-import { getCliente } from "./ClienteService.js";
 import * as constants from "./Constants.js"
 
 
@@ -28,8 +27,6 @@ export function GetAlquiler(clienteid)
 
 export function MostrarAlquileres(lista)
 {
-    
-    
     for(let i of lista)
     {        
         if(i.fechaReserva=="")
@@ -65,16 +62,10 @@ export function MostrarAlquileres(lista)
                    
             `         
                 place.appendChild(element); 
-
-
-
         }
     }
 
-
-
 }
-
 
 export var alquilar= function(isbn)
 {
