@@ -1,0 +1,77 @@
+
+/*              Header                   */
+header
+{
+    background-color: #343a40;
+}
+#imgheader
+{ 
+    width: 83vw; 
+    height: 40vh;
+}
+.divtitle
+{
+    width: 83vw; 
+    height: 40vh;
+display: inline-block;
+}
+.divsidetitle
+{
+  float: right;
+    background-color: #343a40;
+    color: rgba(255,255,255,.5);
+    width: 15vw;
+    height: 40vh;
+}
+.divsidetitle h3
+{
+text-align: center;
+padding-top: 50px;
+}
+#titlecliente
+{
+    font-size: 150%;
+    font-family:  cursive;
+}
+
+
+/*              Estilo titulo del body          */
+.infopagina
+{
+    display: block;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: chocolate;
+    margin-bottom: 0px;
+}
+
+/*           Barra de navegacion                     */
+#nav
+{
+    font-size: 160%;
+    font-family: sans-serif;
+}
+.nav-link
+{
+    margin-left: 170px;
+}
+
+/*                  Footer                           */
+
+#divfooter
+{
+background-color: black;
+height: 8vh;
+margin: 0;
+}
+.footer
+{
+text-align: center;
+color: white;
+margin: 0;
+}
+.footer p
+{
+    margin: 0;   
+}
