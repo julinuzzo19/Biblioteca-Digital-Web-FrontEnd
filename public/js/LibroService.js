@@ -9,29 +9,31 @@ export function getlibros() {
     });
 }
 
-export function getlibrosbyinput(tituloautor) {
+export async function getlibrosbyinput(tituloautor) {
   let regex = /\w[tituloautor]+/;
+  let libros = [];
 
-  fetch(URL_API_LIBROS + `?titulo=${tituloautor}`)
+  await fetch(URL_API_LIBROS + `?titulo=${tituloautor}`)
     .then((response) => response.json())
     .then((lista) => {
       for (let i of lista) {
         if (regex.test(i.titulo)) {
-          mostrarlibro(i);
-          break;
+          libros.push(i);
         }
       }
     });
 
-  fetch(URL_API_LIBROS + `?autor=${tituloautor}`)
+  await fetch(URL_API_LIBROS + `?autor=${tituloautor}`)
     .then((response) => response.json())
     .then((lista) => {
       for (let i of lista) {
         if (regex.test(i.autor)) {
-          mostrarlibro(i);
+          libros.push(i);
         }
       }
     });
+
+  mostrarlibro(libros);
 }
 
 export function mostrardatos(lista) {
@@ -143,20 +145,24 @@ export function mostrardatos(lista) {
 }
 
 export function mostrarlibro(lista) {
-  const place = document.getElementById("tbody2"); 
-  const element = document.createElement("tr");
+  const place = document.getElementById("tbody2");
 
-  place.removeChild(place.firstChild);
+  while (place.hasChildNodes()) {
+    place.removeChild(place.firstChild);
+  }
 
+  for (const item of lista) {
+    const element = document.createElement("tr");
 
-  element.innerHTML = `                                     
-        <th id="filalibrosearchbook" scope="row">${lista.isbn}</th>
-        <td id="filalibrosearchbook">${lista.titulo}</td>
-        <td id="filalibrosearchbook">${lista.autor}</td>
-        <td id="filalibrosearchbook">${lista.stock}</td>
-        <td id="filalibrosearchbook"><img id="imagen2" src="${lista.imagen}"></td>
-        `;
-  place.appendChild(element);
+    element.innerHTML = `                                     
+  <th id="filalibrosearchbook" scope="row">${item.isbn}</th>
+  <td id="filalibrosearchbook">${item.titulo}</td>
+  <td id="filalibrosearchbook">${item.autor}</td>
+  <td id="filalibrosearchbook">${item.stock}</td>
+  <td id="filalibrosearchbook"><img id="imagen2" src="${item.imagen}"></td>
+  `;
+    place.appendChild(element);
+  }
 }
 
 export function SearchByForm() {
