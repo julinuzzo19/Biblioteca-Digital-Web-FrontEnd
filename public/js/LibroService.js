@@ -45,9 +45,15 @@ export function mostrardatos(lista) {
               <td class="filalibroindex">${fila.titulo}</td>
               <td class="filalibroindex">${fila.autor}</td>
               <td class="filalibroindex">${fila.stock}</td>
-              <td class="filalibroindex"><img id="imagen" src="${fila.imagen}"></td>
-              <input type="button" id="${fila.isbn + "alquiler"}" class="btn btn-lg btn-primary" value="Alquilar"></input>
-             <input type="button" id="${fila.isbn + "reserva"}"  class="btn btn-secondary btn-lg" value="Reservar"></input>`;
+              <td class="filalibroindex"><img id="imagen" src="${
+                fila.imagen
+              }"></td>
+           <td class="filalibroindex"> <input type="button" id="${
+             fila.isbn + "alquiler"
+           }" class="btn btn-lg btn-primary " value="Alquilar"></input>
+            <input type="button" id="${
+              fila.isbn + "reserva"
+            }"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>`;
 
       place.appendChild(element);
     }

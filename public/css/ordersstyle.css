@@ -1,99 +1,76 @@
 /* Page Orders */
-#container-orders
-{
-    background-color: blanchedalmond;
-    height: 400px;
-    width: 48%;
-    float: left;
-    margin-left: 20px;
-    overflow-y: auto;
-    
+#container-orders {
+  background-color: blanchedalmond;
+  height: 400px;
+  width: 48%;
+  float: left;
+  margin-left: 20px;
+  overflow-y: auto;
 }
-#container-md-orders
-{
-    height: 400px;
-    width: 48%;
-    background-color: blanchedalmond;
-    float: right;
-    margin-right: 20px;
-    overflow-y:auto;
-    
+#container-md-orders {
+  height: 400px;
+  width: 48%;
+  background-color: blanchedalmond;
+  float: right;
+  margin-right: 20px;
+  overflow-y: auto;
 }
-#container-medium
-{
-    width:1%;
-    height: 400px;
-    display: inline-block;
+#container-medium {
+  width: 1%;
+  height: 400px;
+  display: inline-block;
 }
-.orderstitle
-{
-text-align: center;
-margin-top: 20px;
-
+.orderstitle {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.tableordersalquiler
-{
-   width: 95%;
-   margin-left: 20px;
-   border: 3px solid chocolate;
+.tableordersalquiler {
+  width: 95%;
+  margin-left: 20px;
+  border: 3px solid chocolate;
 }
-.tableordersreserva
-{
-    width: 95%;
-    margin-left: 20px;
-    border: 3px solid chocolate;
+.tableordersreserva {
+  width: 95%;
+  margin-left: 20px;
+  border: 3px solid chocolate;
 }
-.headfilaordersreserva
-{
-    font-size: large;
-    font-family: cursive;
-    padding-top: 10px;
-    text-align: center;
-    border: 3px solid chocolate;
-
+.headfilaordersreserva {
+  font-size: large;
+  font-family: cursive;
+  padding-top: 10px;
+  text-align: center;
+  border: 3px solid chocolate;
 }
-.headfilaordersalquiler
-{
-    font-size: large;
-    font-family: cursive;
-    padding-top: 10px;
-    text-align: center;
-    border: 3px solid chocolate;
-    
-
-
+.headfilaordersalquiler {
+  font-size: large;
+  font-family: cursive;
+  padding-top: 10px;
+  text-align: center;
+  border: 3px solid chocolate;
 }
-.filalibroordersalquiler
-{
-    font-size: medium;
-    font-family: cursive;
-    padding-top: 30px;
-    text-align: center;
-    border: 3px solid chocolate;
-
-    
+.filalibroordersalquiler {
+  font-size: medium;
+  font-family: cursive;
+  padding-top: 30px;
+  text-align: center;
+  border: 3px solid chocolate;
 }
-.filalibroordersreserva
-{
-    font-size: medium;
-    font-family: cursive;
-    padding-top: 20px;
-    text-align: center;
-    border: 3px solid chocolate;
-
-
+.filalibroordersreserva {
+  font-size: medium;
+  font-family: cursive;
+  padding-top: 20px;
+  text-align: center;
+  border: 3px solid chocolate;
 }
-#imagenorder
-{
-    height: 235px;
-    size: 80%;
-    margin-left: 40px;
-    margin-top: 40px;
-    display: inline-block;
-    margin-right: 0px;
+#imagenorder {
+  height: 235px;
+  size: 80%;
+  margin-left: 40px;
+  margin-top: 40px;
+  display: inline-block;
+  margin-right: 0px;
 }
-#bodyorders
-{
-    background-color: chocolate;
+#bodyorders {
+  background-color: chocolate;
 }

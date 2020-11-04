@@ -1,23 +1,15 @@
-
 import * as LibroService from "./LibroService.js";
 import * as ClienteService from "./ClienteService.js";
 import * as AlquilerService from "./AlquilerService.js";
 
-window.onload = () =>{
+window.onload = () => {
+  LibroService.getlibros();
 
-    LibroService.getlibros();
-    ClienteService.getCliente(1);   
-    AlquilerService.GetAlquiler(1);
-}
+  ClienteService.getCliente(1);
+  AlquilerService.GetAlquiler(1);
+};
 
-window.onsubmit=(event1) =>
-{ 
-    event1.preventDefault();  
-    LibroService.SearchByForm();
-    
-}
-
-
-  
-
-
+window.onsubmit = (event1) => {
+  event1.preventDefault();
+  LibroService.SearchByForm();
+};

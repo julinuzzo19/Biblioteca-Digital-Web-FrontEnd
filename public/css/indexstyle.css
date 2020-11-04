@@ -1,79 +1,42 @@
-#divdata
-{  
-    color: white; 
-    text-align: center;     
+#divdata {
+  color: white;
+  text-align: center;
 }
-.table
-{
-    background-color: blanchedalmond;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0%; 
-    border: 3px solid chocolate;  
+.table {
+  background-color: blanchedalmond;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0%;
+  border: 3px solid chocolate;
 }
-.table td, .table th
-{
-    vertical-align: middle;
+.table td,
+.table th {
+  vertical-align: middle;
 }
-.filalibroindex
-{
-   font-size: x-large;
-   font-family: cursive;
-   padding-top: 80px;
-   border: 3px solid chocolate;
+#imagen {
+  width: 200px;
+  height: 200px;
 }
-
-.headfilaindex
-{
-    font-size: x-large;
-    font-family: cursive;
-    border: 3px solid chocolate;
-
+.filalibroindex {
+  font-size: x-large;
+  font-family: cursive;
+  padding-top: 80px;
+  border: 3px solid chocolate;
 }
-.headfilaindex2
-{
-    font-size: x-large;
-    font-family: cursive;
+.headfilaindex {
+  font-size: x-large;
+  font-family: cursive;
+  border: 3px solid chocolate !important;
 }
-.table
-{
-    background-color: blanchedalmond;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0%; 
-    border: 3px solid chocolate;  
+.headfilaindex2 {
+  font-size: x-large;
+  font-family: cursive;
+  border: 3px solid chocolate !important;
 }
-.table td, .table th
-{
-    vertical-align: middle;
+.btn {
+  margin-top: 12px;
+  font-size: 1.2rem;
 }
-#imagen
-{
-    width: 200px; 
-    height: 200px;
-}
-.filalibroindex
-{
-   font-size: x-large;
-   font-family: cursive;
-   padding-top: 80px;
-   border: 3px solid chocolate;
-}
-
-.headfilaindex
-{
-    font-size: x-large;
-    font-family: cursive;
-    border: 3px solid chocolate;
-
-}
-.headfilaindex2
-{
-    font-size: x-large;
-    font-family: cursive;
-}
-.btn 
-{
-    margin-left: 10px;
-    margin-top: 100px;
+.btn-primary {
+  width: 113px;
 }

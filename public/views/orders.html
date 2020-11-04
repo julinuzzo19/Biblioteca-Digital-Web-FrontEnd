@@ -1,99 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/templatestyle.css">
-    <link rel="stylesheet" href="../css/ordersstyle.css">
-    
-    <title>Mis pedidos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/templatestyle.css" />
+    <link rel="stylesheet" href="../css/ordersstyle.css" />
 
-</head>
-<body id="bodyorders"> 
+    <title>Mis pedidos</title>
+  </head>
+  <body id="bodyorders">
     <header>
-        <div class="divtitle"><img id="imgheader" src="../images/logo.jpg"></div> 
-         <div class="divsidetitle"> <h3 id="h3title"></h3></div>     
+      <div class="divtitle">
+        <img id="imgheader" src="../images/logo.jpg" />
+      </div>
+      <div class="divsidetitle"><h3 id="h3title"></h3></div>
     </header>
 
-       <div id="nav"> 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <strong> <a class="nav-link" href="/index.html">Libros disponibles <span class="sr-only">(current)</span></a></strong>
-              </li>
-              <li class="nav-item">
-                <strong><a class="nav-link" href="searchbook.html">Buscar libro</a></strong>
-              </li>
-              <li class="nav-item">
-                <strong><a class="nav-link" href="orders.html">Ver mis pedidos</a></strong>
-              </li>           
-            </ul>
-          </div>
-        </nav>
-      </div>
-   
-      <div ><p class="infopagina">Mis pedidos</p></div>
-        
-      <div id="container-orders">
-        <h2 class="orderstitle">Mis Alquileres</h2>
-    
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <strong>
+                <a class="nav-link" href="/index.html"
+                  >Libros disponibles</a
+                ></strong
+              >
+            </li>
+            <li class="nav-item">
+              <strong
+                ><a class="nav-link" href="searchbook.html"
+                  >Buscar libro</a
+                ></strong
+              >
+            </li>
+            <li class="nav-item">
+              <strong
+                ><a class="nav-link" href="orders.html"
+                  >Ver mis pedidos</a
+                ></strong
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div><p class="infopagina">Mis pedidos</p></div>
+
+    <div id="container-orders">
+      <h2 class="orderstitle">Mis Alquileres</h2>
+
       <div id="divtableorders">
         <table class="tableordersalquiler">
           <thead>
             <tr>
-              <th class="headfilaordersalquiler" >ISBN</th>
-              <th class="headfilaordersalquiler" >Titulo</th>
-              <th class="headfilaordersalquiler" >Autor</th>
-              <th class="headfilaordersalquiler" >Fecha de Alquiler</th>
-              <th class="headfilaordersalquiler" >Fecha de Devolucion</th>
-            </tr> 
+              <th class="headfilaordersalquiler">ISBN</th>
+              <th class="headfilaordersalquiler">Titulo</th>
+              <th class="headfilaordersalquiler">Autor</th>
+              <th class="headfilaordersalquiler">Fecha de Alquiler</th>
+              <th class="headfilaordersalquiler">Fecha de Devolucion</th>
+            </tr>
           </thead>
-          <tbody id="tbodyalquiler">
-          </tbody>
-      </table>
-    </div>   
+          <tbody id="tbodyalquiler"></tbody>
+        </table>
+      </div>
     </div>
 
     <div id="container-medium"></div>
-    
+
     <div id="container-md-orders">
-      <h2 class="orderstitle">Mis Reservas</h2> 
-    <div id="divtableorders">
-      <table class="tableordersreserva">
-        <thead>
-          <tr>
-            <th class="headfilaordersreserva" >ISBN</th>
-            <th class="headfilaordersreserva" >Titulo</th>
-            <th class="headfilaordersreserva" >Autor</th>
-            <th class="headfilaordersreserva" >Fecha de Reserva</th>
-          </tr> 
-        </thead>
-        <tbody id="tbodyreserva">
-        </tbody>
-    </table>
-  </div>
-     </div>
-    
-     
-    
-    
-  
-    
+      <h2 class="orderstitle">Mis Reservas</h2>
+      <div id="divtableorders">
+        <table class="tableordersreserva">
+          <thead>
+            <tr>
+              <th class="headfilaordersreserva">ISBN</th>
+              <th class="headfilaordersreserva">Titulo</th>
+              <th class="headfilaordersreserva">Autor</th>
+              <th class="headfilaordersreserva">Fecha de Reserva</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyreserva"></tbody>
+        </table>
+      </div>
+    </div>
+
     <div id="divfooter">
       <footer class="footer">
         <p>Municipalidad Carmen de Areco</p>
         <p>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</p>
       </footer>
-      </div>
-    
-    
+    </div>
+
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/LibroService.js"></script>
     <script type="module" src="../js/Constants.js"></script>
     <script type="module" src="../js/AlquilerService.js"></script>
-    <script type="module" src="../js/ClienteService.js"></script>  
-</body>
+    <script type="module" src="../js/ClienteService.js"></script>
+  </body>
 </html>
