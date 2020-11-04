@@ -143,8 +143,12 @@ export function mostrardatos(lista) {
 }
 
 export function mostrarlibro(lista) {
-  const place = document.getElementById("tbody2");
+  const place = document.getElementById("tbody2"); 
   const element = document.createElement("tr");
+
+  place.removeChild(place.firstChild);
+
+
   element.innerHTML = `                                     
         <th id="filalibrosearchbook" scope="row">${lista.isbn}</th>
         <td id="filalibrosearchbook">${lista.titulo}</td>
