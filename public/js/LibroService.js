@@ -46,7 +46,7 @@ export function mostrardatos(lista) {
             <th class="filalibroindex" scope="row">${fila.isbn}</th>
               <td class="filalibroindex">${fila.titulo}</td>
               <td class="filalibroindex">${fila.autor}</td>
-              <td class="filalibroindex">${fila.stock}</td>
+              <td class="filalibroindex">${fila.editorial}</td>
               <td class="filalibroindex"><img id="imagen" src="${fila.imagen}"></td>
            <td class="filalibroindex"> <input type="button" id="${fila.isbn}" class="btn btn-lg btn-primary " value="Alquilar"></input>
             <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>`;
@@ -70,7 +70,7 @@ export function mostrarlibro(lista) {
   <th id="filalibrosearchbook" scope="row">${item.isbn}</th>
   <td id="filalibrosearchbook">${item.titulo}</td>
   <td id="filalibrosearchbook">${item.autor}</td>
-  <td id="filalibrosearchbook">${item.stock}</td>
+  <td id="filalibrosearchbook">${item.editorial}</td>
   <td id="filalibrosearchbook"><img id="imagen2" src="${item.imagen}"></td>
   `;
     place.appendChild(element);

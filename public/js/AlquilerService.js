@@ -30,12 +30,15 @@ export function MostrarAlquileres(lista) {
       const element = document.createElement("tr");
       var fila = i;
 
+      var fechaalquiler = fila.fechaAlquiler.substring(0, 10);
+      var fechadevolucion = fila.fechaDevolucion.substring(0, 10);
+
       element.innerHTML = `                                     
         <th class="filalibroordersalquiler" scope="row">${fila.libroISBN}</th>      
             <td class="filalibroordersalquiler">${fila.titulo}</td>     
             <td class="filalibroordersalquiler">${fila.autor}</td>
-            <td class="filalibroordersalquiler">${fila.fechaAlquiler}</td>
-            <td class="filalibroordersalquiler">${fila.fechaDevolucion}</td>
+            <td class="filalibroordersalquiler">${fechaalquiler}</td>
+            <td class="filalibroordersalquiler">${fechadevolucion}</td>
                
         `;
       place.appendChild(element);
@@ -43,12 +46,13 @@ export function MostrarAlquileres(lista) {
       const place = document.getElementById("tbodyreserva");
       const element = document.createElement("tr");
       var fila = i;
+      var fechareserva = fila.fechaReserva.substring(0, 10);
 
       element.innerHTML = `                                     
             <th class="filalibroordersreserva" scope="row">${fila.libroISBN}</th>      
                 <td class="filalibroordersreserva">${fila.titulo}</td>     
                 <td class="filalibroordersreserva">${fila.autor}</td>
-                <td class="filalibroordersreserva">${fila.fechaReserva}</td>
+                <td class="filalibroordersreserva">${fechareserva}</td>
                    
             `;
       place.appendChild(element);
