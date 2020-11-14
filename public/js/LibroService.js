@@ -1,4 +1,4 @@
-import { URL_API_LIBROS } from "./Constants.js";
+import * as Constants from "./Constants.js";
 import * as AlquilerService from "./AlquilerService.js";
 
 export function getlibros() {
@@ -13,7 +13,7 @@ export async function getlibrosbyinput(tituloautor) {
   let regex = /\w[tituloautor]+/;
   let libros = [];
 
-  await fetch(URL_API_LIBROS + `?titulo=${tituloautor}`)
+  await fetch(Constants.URL_API_LIBROS + `?titulo=${tituloautor}`)
     .then((response) => response.json())
     .then((lista) => {
       for (let i of lista) {
@@ -23,7 +23,7 @@ export async function getlibrosbyinput(tituloautor) {
       }
     });
 
-  await fetch(URL_API_LIBROS + `?autor=${tituloautor}`)
+  await fetch(Constants.URL_API_LIBROS + `?autor=${tituloautor}`)
     .then((response) => response.json())
     .then((lista) => {
       for (let i of lista) {
@@ -51,7 +51,9 @@ export function mostrardatos(lista) {
            <td class="filalibroindex"> <input type="button" id="${fila.isbn}" class="btn btn-lg btn-primary " value="Alquilar"></input>
             <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>`;
 
-      place.appendChild(element);
+      if (place != null) {
+        place.appendChild(element);
+      }
     }
   }
 }

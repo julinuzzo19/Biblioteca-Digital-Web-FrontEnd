@@ -41,7 +41,10 @@ export function MostrarAlquileres(lista) {
             <td class="filalibroordersalquiler">${fechadevolucion}</td>
                
         `;
-      place.appendChild(element);
+
+      if (place != null) {
+        place.appendChild(element);
+      }
     } else {
       const place = document.getElementById("tbodyreserva");
       const element = document.createElement("tr");
@@ -55,7 +58,9 @@ export function MostrarAlquileres(lista) {
                 <td class="filalibroordersreserva">${fechareserva}</td>
                    
             `;
-      place.appendChild(element);
+      if (place != null) {
+        place.appendChild(element);
+      }
     }
   }
 }
