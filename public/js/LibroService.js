@@ -9,30 +9,27 @@ export function getlibros() {
     });
 }
 
-export async function getlibrosbyinput(tituloautor) {
+export async function getlibrosbyinput(tituloautor, check) {
   let regex = /\w[tituloautor]+/;
   let libros = [];
 
-  await fetch(Constants.URL_API_LIBROS + `?titulo=${tituloautor}`)
+  var URL_GET = Constants.URL_API_LIBROS;
+
+  if (check == "titulo") {
+    URL_GET = URL_GET + `?titulo=${tituloautor}`;
+  } else {
+    URL_GET = URL_GET + `?autor=${tituloautor}`;
+  }
+
+  await fetch(URL_GET)
     .then((response) => response.json())
     .then((lista) => {
       for (let i of lista) {
-        if (regex.test(i.titulo)) {
+        if (regex.test(i.titulo) || regex.test(i.autor)) {
           libros.push(i);
         }
       }
     });
-
-  await fetch(Constants.URL_API_LIBROS + `?autor=${tituloautor}`)
-    .then((response) => response.json())
-    .then((lista) => {
-      for (let i of lista) {
-        if (regex.test(i.autor)) {
-          libros.push(i);
-        }
-      }
-    });
-
   mostrarlibro(libros);
 }
 
@@ -80,9 +77,18 @@ export function mostrarlibro(lista) {
 }
 
 export function SearchByForm() {
-  var tituloautor = document.getElementById("tituloautor").value;
+  let tituloautor = document.getElementById("tituloautor").value;
 
-  getlibrosbyinput(tituloautor);
+  var checkbox = document.getElementsByName("optradio");
+
+  var check;
+  if (checkbox[0].checked) {
+    check = checkbox[0].value;
+  } else {
+    check = checkbox[1].value;
+  }
+
+  getlibrosbyinput(tituloautor, check);
 }
 
 document.addEventListener("click", (e) => {

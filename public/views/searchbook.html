@@ -41,6 +41,18 @@
         <div class="form-group">
           <label id="titleform" class="label display-1" for="formGroupExampleInput">Ingrese Titulo o Autor del libro:</label>
           <input id="tituloautor"  type="text" class="form-control"  placeholder="Titulo o Autor">        
+          <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="inputtitulo" name="optradio" value="titulo" 
+                     checked>Titulo
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" id="inputautor" name="optradio" value="autor" >Autor
+            </label>
+        </div>
+         
           <input class="btn btn-primary" id="btnsearch" type="submit" value="Buscar"></input>
         </div>
         
@@ -61,7 +73,10 @@
                 <tbody id="tbody2">
            
                 </tbody>                     
-            </table>       
+            </table>      
+            
+            
+
      </div>
     </div>
     <div id="divfooter">
