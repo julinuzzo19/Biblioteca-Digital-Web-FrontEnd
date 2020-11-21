@@ -44,7 +44,6 @@ header {
 }
 /* Estilos del navbar */
 .topnav {
-
   overflow: hidden;
 }
 
@@ -66,4 +65,9 @@ header {
 
 .topnav a.active {
   border-bottom: 3px solid chocolate;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(211, 93, 9);
 }

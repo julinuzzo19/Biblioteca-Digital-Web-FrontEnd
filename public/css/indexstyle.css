@@ -1,13 +1,8 @@
-body {
-  background-color: chocolate;
-}
-
 .table {
   background-color: blanchedalmond;
-  width: 100px;
+
   text-align: center;
   margin-bottom: 0%;
-  border: 3px solid black !important;
 }
 
 #filalibrosearchbook {
@@ -19,7 +14,6 @@ body {
 .table td,
 .table th {
   vertical-align: middle;
-
 }
 #imagen {
   width: 130px;
@@ -46,8 +40,9 @@ body {
   width: 400px;
 }
 #titleform {
-  font-size: larger;
+  font-size: 120%;
   margin-bottom: 20px;
+  font-family: cursive;
 }
 #btnsearch {
   font-size: large;
@@ -63,7 +58,7 @@ body {
 #formsearchbook {
   font-size: 150%;
   width: 30vw;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .infopagina {
   display: block;
@@ -73,4 +68,3 @@ body {
   background-color: chocolate;
   margin-left: 14em;
 }
-
