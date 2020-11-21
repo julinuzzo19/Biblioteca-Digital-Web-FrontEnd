@@ -3,28 +3,14 @@ header {
   background-color: #343a40;
 }
 #imgheader {
-  width: 83vw;
-  height: 40vh;
+  width: 70vw;
+  height: 30vh;
 }
-.divtitle {
-  width: 83vw;
-  height: 40vh;
-  display: inline-block;
-}
-.divsidetitle {
-  float: right;
-  background-color: #343a40;
-  color: rgba(255, 255, 255, 0.5);
-  width: 15vw;
-  height: 40vh;
-}
-.divsidetitle h3 {
-  text-align: center;
-  padding-top: 50px;
-}
-#titlecliente {
+
+.titlecliente {
   font-size: 150%;
   font-family: cursive;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /*              Estilo titulo del body          */
@@ -35,6 +21,10 @@ header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: chocolate;
   margin-bottom: 0px;
+}
+.btn {
+  margin-top: 12px;
+
 }
 
 /*           Barra de navegacion                     */

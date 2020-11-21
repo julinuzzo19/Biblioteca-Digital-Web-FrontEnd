@@ -3,10 +3,7 @@ import * as Constants from "./Constants.js";
 export function Bienvenidacliente(cliente) {
   const place = document.getElementById("h3title");
   const element = document.createElement("h3");
-  element.innerHTML = `    
-   <p> Bienvenido</p>
-   <p id="titlecliente"> ${cliente.nombre}!</p>
-    `;
+  element.innerHTML = `<p class="titlecliente"> ${cliente.nombre}!</p>`;
   place.appendChild(element);
 }
 /* Cliente creado y seleccionado por defecto */

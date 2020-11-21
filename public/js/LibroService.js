@@ -56,7 +56,7 @@ export function mostrardatos(lista) {
 }
 
 export function mostrarlibro(lista) {
-  const place = document.getElementById("tbody2");
+  const place = document.getElementById("tbody");
 
   while (place.hasChildNodes()) {
     place.removeChild(place.firstChild);
@@ -66,11 +66,13 @@ export function mostrarlibro(lista) {
     const element = document.createElement("tr");
 
     element.innerHTML = `                                     
-  <th id="filalibrosearchbook" scope="row">${item.isbn}</th>
-  <td id="filalibrosearchbook">${item.titulo}</td>
-  <td id="filalibrosearchbook">${item.autor}</td>
-  <td id="filalibrosearchbook">${item.editorial}</td>
-  <td id="filalibrosearchbook"><img id="imagen2" src="${item.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
+  <th class="filalibroindex" scope="row">${item.isbn}</th>
+  <td class="filalibroindex">${item.titulo}</td>
+  <td class="filalibroindex">${item.autor}</td>
+  <td class="filalibroindex">${item.editorial}</td>
+  <td class="filalibroindex"><img id="imagen" src="${item.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
+  <td class="filalibroindex"> <input type="button" id="${item.isbn}" class="btn btn-lg btn-primary " value="Alquilar"></input>
+  <input type="button" id="${item.isbn}"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>
   `;
     place.appendChild(element);
   }

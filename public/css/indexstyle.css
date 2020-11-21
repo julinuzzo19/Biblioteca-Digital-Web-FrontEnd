@@ -1,21 +1,38 @@
+body
+{
+background-color: chocolate;
+
+}
 #divdata {
   color: white;
   text-align: center;
 }
 .table {
   background-color: blanchedalmond;
-  width: 100%;
+width: 100px;
   text-align: center;
   margin-bottom: 0%;
   border: 3px solid chocolate;
 }
+
+.container-md table {
+  width: 100%;
+  margin-left: 0px;
+  border: 3px solid chocolate;
+}
+#filalibrosearchbook {
+  border: 3px solid chocolate;
+  font-size: large;
+  font-family: cursive;
+}
+
 .table td,
 .table th {
   vertical-align: middle;
 }
 #imagen {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
 .filalibroindex {
   font-size: x-large;
@@ -33,10 +50,35 @@
   font-family: cursive;
   border: 3px solid chocolate !important;
 }
-.btn {
-  margin-top: 12px;
-  font-size: 1.2rem;
-}
+
 .btn-primary {
   width: 113px;
+}
+
+.form-control {
+  font-size: 80%;
+  width: 400px;
+}
+#titleform {
+  font-size: larger;
+  margin-bottom: 20px;
+ margin-left: 0;
+}
+#btnsearch {
+  font-size: large;
+
+  width: 100px;
+}
+
+/* Form Search Book */
+#imgsearchbook {
+  height: 235px;
+  size: 80%;
+margin-left: 40px;
+
+}
+#formsearchbook {
+  font-size: 150%;
+  width: 30vw;
+  margin-left: 25px;
 }

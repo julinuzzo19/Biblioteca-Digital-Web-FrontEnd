@@ -17,10 +17,25 @@
   </head>
   <body id="bodyorders">
     <header>
-      <div class="divtitle">
-        <img id="imgheader" src="../images/logo.jpg" />
+      <div class="row">
+        <div class="container-fluid divtitle col-8">
+          <img id="imgheader" src="../images/logo.jpg" />
+        </div>
+
+        <div class="divsidetitle col-2 text-center container-fluid">
+          <h3 id="h3title" class="titlecliente pt-5 mt-2 ml-5 pl-4">
+            Bienvenido
+          </h3>
+        </div>
+        <div class="col-2 text-center pt-3 mt-3">
+          <button type="button" class="btn btn-info w-75">
+            Ir a mi perfil
+          </button>
+          <button type="button" class="btn btn-danger w-75">
+            Cerrar Sesión
+          </button>
+        </div>
       </div>
-      <div class="divsidetitle"><h3 id="h3title"></h3></div>
     </header>
 
     <div id="nav">
@@ -34,13 +49,7 @@
                 ></strong
               >
             </li>
-            <li class="nav-item">
-              <strong
-                ><a class="nav-link" href="searchbook.html"
-                  >Buscar libro</a
-                ></strong
-              >
-            </li>
+           
             <li class="nav-item">
               <strong
                 ><a class="nav-link" href="orders.html"
