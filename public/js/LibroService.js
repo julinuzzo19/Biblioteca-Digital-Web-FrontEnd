@@ -38,19 +38,26 @@ export function mostrardatos(lista) {
     const place = document.getElementById("tbody");
     const element = document.createElement("tr");
     var fila = i;
-    if (fila.stock > 0) {
-      element.innerHTML = `                                     
+
+    element.innerHTML = `                                     
             <th class="filalibroindex" scope="row">${fila.isbn}</th>
               <td class="filalibroindex">${fila.titulo}</td>
               <td class="filalibroindex">${fila.autor}</td>
               <td class="filalibroindex">${fila.editorial}</td>
               <td class="filalibroindex"><img id="imagen" src="${fila.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
-           <td class="filalibroindex"> <input type="button" id="${fila.isbn}" class="btn btn-lg btn-primary " value="Alquilar"></input>
-            <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>`;
+           <td class="filalibroindex"> <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn btn-lg btn-primary " value="Alquilar"></input>
+            <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg" name="btnreserva" value="Reservar"></input> </td>`;
 
-      if (place != null) {
-        place.appendChild(element);
-      }
+    if (place != null) {
+      place.appendChild(element);
+    }
+    if (fila.stock < 1) {
+      var btnreserva = (document.querySelector(
+        'input[name="btnreserva"]'
+      ).disabled = true);
+      var btnalquiler = (document.querySelector(
+        'input[name="btnalquiler"]'
+      ).disabled = true);
     }
   }
 }
@@ -71,10 +78,18 @@ export function mostrarlibro(lista) {
   <td class="filalibroindex">${item.autor}</td>
   <td class="filalibroindex">${item.editorial}</td>
   <td class="filalibroindex"><img id="imagen" src="${item.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
-  <td class="filalibroindex"> <input type="button" id="${item.isbn}" class="btn btn-lg btn-primary " value="Alquilar"></input>
-  <input type="button" id="${item.isbn}"  class="btn btn-secondary btn-lg " value="Reservar"></input> </td>
+  <td class="filalibroindex"> <input type="button" id="${item.isbn}" class="btn btn-lg btn-primary" name="btnalquiler" value="Alquilar"></input>
+  <input type="button" id="${item.isbn}"  class="btn btn-secondary btn-lg " name="btnreserva" value="Reservar"></input> </td>
   `;
     place.appendChild(element);
+    if (item.stock < 1) {
+      var btnreserva = (document.querySelector(
+        'input[name="btnreserva"]'
+      ).disabled = true);
+      var btnalquiler = (document.querySelector(
+        'input[name="btnalquiler"]'
+      ).disabled = true);
+    }
   }
 }
 
