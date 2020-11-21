@@ -1,23 +1,15 @@
 body {
   background-color: chocolate;
 }
-#divdata {
-  color: white;
-  text-align: center;
-}
+
 .table {
   background-color: blanchedalmond;
   width: 100px;
   text-align: center;
   margin-bottom: 0%;
-  border: 3px solid chocolate;
+  border: 3px solid black !important;
 }
 
-.container-md table {
-  width: 100%;
-  margin-left: 0px;
-  border: 3px solid chocolate;
-}
 #filalibrosearchbook {
   border: 3px solid chocolate;
   font-size: large;
@@ -27,6 +19,7 @@ body {
 .table td,
 .table th {
   vertical-align: middle;
+
 }
 #imagen {
   width: 130px;
@@ -43,14 +36,9 @@ body {
   font-family: cursive;
   border: 3px solid chocolate !important;
 }
-.headfilaindex2 {
-  font-size: x-large;
-  font-family: cursive;
-  border: 3px solid chocolate !important;
-}
 
 .btn-primary {
-  width: 113px;
+  width: 115px;
 }
 
 .form-control {
@@ -60,11 +48,9 @@ body {
 #titleform {
   font-size: larger;
   margin-bottom: 20px;
-
 }
 #btnsearch {
   font-size: large;
-
   width: 100px;
 }
 
@@ -79,3 +65,12 @@ body {
   width: 30vw;
   margin-left: 25px;
 }
+.infopagina {
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: chocolate;
+  margin-left: 14em;
+}
+

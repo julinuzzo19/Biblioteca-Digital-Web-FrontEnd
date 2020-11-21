@@ -76,3 +76,11 @@
 #bodyorders {
   background-color: chocolate;
 }
+.infopaginaorders {
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: chocolate;
+  margin-bottom: 0px;
+}

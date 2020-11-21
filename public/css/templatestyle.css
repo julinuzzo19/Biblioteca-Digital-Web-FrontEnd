@@ -13,18 +13,9 @@ header {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/*              Estilo titulo del body          */
-.infopagina {
-  display: block;
-  text-align: center;
-  font-size: 200%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: chocolate;
-  margin-bottom: 0px;
-}
+/*              Estilo de botones          */
 .btn {
   margin-top: 12px;
-
 }
 
 /*           Barra de navegacion                     */
@@ -50,4 +41,29 @@ header {
 }
 .footer p {
   margin: 0;
+}
+/* Estilos del navbar */
+.topnav {
+
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid chocolate;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid chocolate;
 }
