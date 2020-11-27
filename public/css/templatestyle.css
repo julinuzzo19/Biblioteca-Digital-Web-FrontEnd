@@ -1,7 +1,4 @@
 /*              Header                   */
-header {
-  background-color: #343a40;
-}
 #imgheader {
   width: 70vw;
   height: 30vh;
@@ -10,13 +7,22 @@ header {
 .titlecliente {
   font-size: 150%;
   font-family: cursive;
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 
 /*              Estilo de botones          */
 .btn {
   margin-top: 12px;
 }
+.btn-info, .btn-danger
+{
+  background-color: chocolate;
+  border:chocolate solid 1px;
+  color: black;
+  font-weight: bold;
+
+}
+
 
 /*           Barra de navegacion                     */
 #nav {
@@ -25,21 +31,27 @@ header {
   
 }
 .nav-link {
-  margin-left: 170px;
+  margin-left: 275px;
   font-size: 25px !important;
+  color: #643403 !important;
 }
+
+
 
 /*                  Footer                           */
 
 #divfooter {
-  background-color: black;
-  height: 8vh;
+  background-color:  hsl(30, 70%, 52%);
   margin: 0;
+  padding-top: -100px;
 }
 .footer {
   text-align: center;
-  color: white;
+  color: #643403 !important;
+  font-weight: bold;
   margin: 0;
+  border-top: hsl(30, 86%, 26%) solid 3px;
+  border-bottom: hsl(30, 86%, 26%) solid 3px;
 }
 .footer p {
   margin: 0;
@@ -47,6 +59,13 @@ header {
 /* Estilos del navbar */
 .topnav {
   overflow: hidden;
+
+}
+.navbar
+{
+  background-color: hsl(30, 70%, 52%)!important; 
+  border-top: hsl(30, 86%, 26%) solid 4px;
+  border-bottom: hsl(30, 86%, 26%) solid 4px;
 }
 
 /* Style the links inside the navigation bar */
@@ -62,14 +81,20 @@ header {
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid #9c4f00;
+  border-bottom: 3px solid  hsl(30, 86%, 26%);
 }
 
 .topnav a.active {
-  border-bottom: 3px solid #9c4f00;
+  border-bottom: 3px solid  hsl(30, 86%, 26%);
 }
 
 body {
   overflow-x: hidden;
   background-color:#9c4f00;
+}
+
+#inputtitulo
+{
+  color: #9c4f00 !important;
+
 }

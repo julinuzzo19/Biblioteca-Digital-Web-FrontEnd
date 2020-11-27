@@ -1,12 +1,11 @@
 .table {
   background-color: #ffebcd;
-
   text-align: center;
   margin-bottom: 0%;
 }
 
 #filalibrosearchbook {
-  border: 3px solid#9c4f00;
+
   font-size: large;
   font-family: cursive;
 }
@@ -23,12 +22,12 @@
   font-size: x-large;
   font-family: cursive;
   padding-top: 80px;
-  border: 3px solid#9c4f00;
+  border: 3px solid hsl(30, 86%, 26%) !important;
 }
 .headfilaindex {
   font-size: x-large;
   font-family: cursive;
-  border: 3px solid#9c4f00 !important;
+  border: 3px solid hsl(30, 86%, 26%) !important;
 }
 
 .btn-primary {
@@ -38,8 +37,8 @@
 #btnsearch
 {
   color: black;
-  background-color: #ffebcd;
-  border-color: blanchedalmond;
+  background-color:  hsl(30, 70%, 52%);
+  border-color: chocolate;
 
 }
 input[name="btnalquiler"]{
