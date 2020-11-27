@@ -82,7 +82,8 @@ input[name="btnreserva"]{
   display: block;
   text-align: center;
   font-size: 200%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:cursive;
+  font-weight: bold;
   background-color:#9c4f00;
   margin-left: 14em;
   margin-top: 10px;
