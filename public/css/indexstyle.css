@@ -1,12 +1,12 @@
 .table {
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
 
   text-align: center;
   margin-bottom: 0%;
 }
 
 #filalibrosearchbook {
-  border: 3px solid chocolate;
+  border: 3px solid#9c4f00;
   font-size: large;
   font-family: cursive;
 }
@@ -23,18 +23,37 @@
   font-size: x-large;
   font-family: cursive;
   padding-top: 80px;
-  border: 3px solid chocolate;
+  border: 3px solid#9c4f00;
 }
 .headfilaindex {
   font-size: x-large;
   font-family: cursive;
-  border: 3px solid chocolate !important;
+  border: 3px solid#9c4f00 !important;
 }
 
 .btn-primary {
   width: 115px;
+  
 }
+#btnsearch
+{
+  color: black;
+  background-color: #ffebcd;
+  border-color: blanchedalmond;
 
+}
+input[name="btnalquiler"]{
+  color: black !important;
+  background-color: chocolate !important;
+  border-color: chocolate !important;}
+.form-control {
+  font-size: 100%;
+  width: 400px;
+}
+input[name="btnreserva"]{
+  color: black !important;
+  background-color: #ec8e4a !important;
+  border-color: chocolate !important;}
 .form-control {
   font-size: 100%;
   width: 400px;
@@ -65,6 +84,7 @@
   text-align: center;
   font-size: 200%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: chocolate;
+  background-color:#9c4f00;
   margin-left: 14em;
+  margin-top: 10px;
 }

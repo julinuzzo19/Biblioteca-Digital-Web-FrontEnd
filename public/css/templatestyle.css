@@ -22,9 +22,11 @@ header {
 #nav {
   font-size: 160%;
   font-family: sans-serif;
+  
 }
 .nav-link {
   margin-left: 170px;
+  font-size: 25px !important;
 }
 
 /*                  Footer                           */
@@ -60,14 +62,14 @@ header {
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid chocolate;
+  border-bottom: 3px solid #9c4f00;
 }
 
 .topnav a.active {
-  border-bottom: 3px solid chocolate;
+  border-bottom: 3px solid #9c4f00;
 }
 
 body {
   overflow-x: hidden;
-  background-color: rgb(211, 93, 9);
+  background-color:#9c4f00;
 }
