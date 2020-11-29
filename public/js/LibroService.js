@@ -35,11 +35,12 @@ export async function getlibrosbyinput(tituloautor, check) {
 
 export function mostrardatos(lista) {
   for (let i of lista) {
-    const place = document.getElementById("tbody");
-    const element = document.createElement("tr");
-    var fila = i;
+    if (i.stock > 0) {
+      const place = document.getElementById("tbody");
+      const element = document.createElement("tr");
+      var fila = i;
 
-    element.innerHTML = `                                     
+      element.innerHTML = `                                     
             <th class="filalibroindex" scope="row">${fila.isbn}</th>
               <td class="filalibroindex">${fila.titulo}</td>
               <td class="filalibroindex">${fila.autor}</td>
@@ -48,16 +49,17 @@ export function mostrardatos(lista) {
            <td class="filalibroindex"> <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn btn-lg btn-primary " value="Alquilar"></input>
             <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg" name="btnreserva" value="Reservar"></input> </td>`;
 
-    if (place != null) {
-      place.appendChild(element);
-    }
-    if (fila.stock < 1) {
-      var btnreserva = (document.querySelector(
-        'input[name="btnreserva"]'
-      ).disabled = true);
-      var btnalquiler = (document.querySelector(
-        'input[name="btnalquiler"]'
-      ).disabled = true);
+      if (place != null) {
+        place.appendChild(element);
+      }
+      if (fila.stock < 1) {
+        var btnreserva = (document.querySelector(
+          'input[name="btnreserva"]'
+        ).disabled = true);
+        var btnalquiler = (document.querySelector(
+          'input[name="btnalquiler"]'
+        ).disabled = true);
+      }
     }
   }
 }

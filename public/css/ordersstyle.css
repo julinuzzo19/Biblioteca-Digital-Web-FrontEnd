@@ -23,6 +23,9 @@
 .orderstitle {
   text-align: center;
   margin-top: 20px;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .tableordersalquiler {

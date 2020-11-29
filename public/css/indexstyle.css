@@ -1,11 +1,10 @@
 .table {
   background-color: #ffebcd;
   text-align: center;
-  margin-bottom: 0%;
+  width: 860px;
 }
 
 #filalibrosearchbook {
-
   font-size: large;
   font-family: cursive;
 }
@@ -13,6 +12,7 @@
 .table td,
 .table th {
   vertical-align: middle;
+  padding: 0.6rem;
 }
 #imagen {
   width: 130px;
@@ -32,27 +32,26 @@
 
 .btn-primary {
   width: 115px;
-  
 }
-#btnsearch
-{
+#btnsearch {
   color: black;
-  background-color:  hsl(30, 70%, 52%);
+  background-color: hsl(30, 70%, 52%);
   border-color: chocolate;
-
 }
-input[name="btnalquiler"]{
+input[name="btnalquiler"] {
   color: black !important;
   background-color: chocolate !important;
-  border-color: chocolate !important;}
+  border-color: chocolate !important;
+}
 .form-control {
   font-size: 100%;
   width: 400px;
 }
-input[name="btnreserva"]{
+input[name="btnreserva"] {
   color: black !important;
   background-color: #ec8e4a !important;
-  border-color: chocolate !important;}
+  border-color: chocolate !important;
+}
 .form-control {
   font-size: 100%;
   width: 400px;
@@ -82,9 +81,9 @@ input[name="btnreserva"]{
   display: block;
   text-align: center;
   font-size: 200%;
-  font-family:cursive;
+  font-family: cursive;
   font-weight: bold;
-  background-color:#9c4f00;
+  background-color: #9c4f00;
   margin-left: 14em;
   margin-top: 10px;
 }
