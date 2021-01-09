@@ -12,23 +12,19 @@
 
 /*              Estilo de botones          */
 .btn {
-   margin-top: 12px;
+  margin-top: 12px;
 }
-.btn-info, .btn-danger
-{
+.btn-info,
+.btn-danger {
   background-color: chocolate;
-  border:chocolate solid 1px;
+  border: chocolate solid 1px;
   color: black;
   font-weight: bold;
-
 }
-
 
 /*           Barra de navegacion                     */
 #nav {
-
   font-family: cursive;
-  
 }
 .nav-link {
   margin-left: 275px;
@@ -36,12 +32,10 @@
   color: #643403 !important;
 }
 
-
-
 /*                  Footer                           */
 
 #divfooter {
-  background-color:  hsl(30, 70%, 52%);
+  background-color: hsl(30, 70%, 52%);
   margin: 0;
   padding-top: -100px;
 }
@@ -59,11 +53,9 @@
 /* Estilos del navbar */
 .topnav {
   overflow: hidden;
-
 }
-.navbar
-{
-  background-color: hsl(30, 70%, 52%)!important; 
+.navbar {
+  background-color: hsl(30, 70%, 52%) !important;
   border-top: hsl(30, 86%, 26%) solid 4px;
   border-bottom: hsl(30, 86%, 26%) solid 4px;
 }
@@ -81,22 +73,20 @@
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid  hsl(30, 86%, 26%);
+  border-bottom: 3px solid hsl(30, 86%, 26%);
 }
 
 .topnav a.active {
-  border-bottom: 3px solid  hsl(30, 86%, 26%);
+  border-bottom: 3px solid hsl(30, 86%, 26%);
 }
 
 body {
   overflow-x: hidden;
-  background-color:#9c4f00;
+  background-color: #9c4f00;
   margin: 0px;
   padding: 0px;
 }
 
-#inputtitulo
-{
+#inputtitulo {
   color: #9c4f00 !important;
-
 }
