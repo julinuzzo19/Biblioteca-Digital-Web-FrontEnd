@@ -45,7 +45,7 @@ export function mostrardatos(lista) {
       <div class="image-space"> <img class="image-libro" src="${fila.imagen}" alt=""></div>
       <h2>${fila.titulo}</h2>
       <h4>${fila.autor}</h4>
-      <h6>${fila.editorial}</h6>
+      <h5>${fila.editorial}</h5>
 
       <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn" value="Alquilar"></input>
      <br> </br>
@@ -81,7 +81,7 @@ export function mostrarlibro(lista) {
     <article class="article-item">
     <div class="image-space"> <img class="image-libro" src="${item.imagen}" alt=""></div>
     <h2>${item.titulo}</h2>
-    <h4 ">${item.autor}</h4>
+    <h4>${item.autor}</h4>
     <h5>${item.editorial}</h5>
 
     <input type="button" id="${item.isbn}" name="btnalquiler" class="btn   " value="Alquilar"></input>

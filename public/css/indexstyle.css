@@ -27,7 +27,6 @@
   font-family: cursive;
 }
 
-
 /* Form Search Book */
 #imgsearchbook {
   height: 195px;
@@ -36,7 +35,6 @@
   margin-left: 40px;
   margin-top: -5px;
   margin-bottom: 10px;
-
 }
 #formsearchbook {
   font-size: 150%;
@@ -61,16 +59,18 @@
   width: 150px;
 }
 .image-libro {
-  height: 150px;
-
+  height: 154px;
   width: 150px;
+  
 }
 .article-item {
   display: block;
   border: rgb(90, 45, 0) solid 3px;
-  height: 157px;
+  height: 160px;
   background-color: hsl(30, 70%, 52%);
   margin-bottom: 6px;
+  padding: 0px;
+  
 }
 .article-item h2 /* Titulo */ {
   color: rgb(90, 45, 0);
@@ -80,7 +80,6 @@
   margin-bottom: 10px;
 }
 .article-item h5 /* Editorial */ {
-
 }
 .article-item .btn {
   float: right;
@@ -98,7 +97,7 @@
   width: 130px;
   background-color: chocolate !important;
 }
-.clearfix{
-  clear:both;
-  float:none;
+.clearfix {
+  clear: both;
+  float: none;
 }
