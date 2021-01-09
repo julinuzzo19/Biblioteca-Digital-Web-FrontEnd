@@ -36,18 +36,21 @@ export async function getlibrosbyinput(tituloautor, check) {
 export function mostrardatos(lista) {
   for (let i of lista) {
     if (i.stock > 0) {
-      const place = document.getElementById("tbody");
-      const element = document.createElement("tr");
+      const place = document.getElementById("articles");
+      const element = document.createElement("div");
       var fila = i;
 
       element.innerHTML = `                                     
-            <th class="filalibroindex" scope="row">${fila.isbn}</th>
-              <td class="filalibroindex">${fila.titulo}</td>
-              <td class="filalibroindex">${fila.autor}</td>
-              <td class="filalibroindex">${fila.editorial}</td>
-              <td class="filalibroindex"><img id="imagen" src="${fila.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
-           <td class="filalibroindex"> <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn btn-lg btn-primary " value="Alquilar"></input>
-            <input type="button" id="${fila.isbn}"  class="btn btn-secondary btn-lg" name="btnreserva" value="Reservar"></input> </td>`;
+      <article class="article-item">
+      <div class="image-space"> <img class="image-libro" src="${fila.imagen}" alt=""></div>
+      <h2>${fila.titulo}</h2>
+      <h4>${fila.autor}</h4>
+      <h5>${fila.editorial}</h5>
+
+      <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn   " value="Alquilar"></input>
+     <br> </br>
+      <input type="button" id="${fila.isbn}"  class="btn " name="btnreserva" value="Reservar"></input> `;
+
 
       if (place != null) {
         place.appendChild(element);

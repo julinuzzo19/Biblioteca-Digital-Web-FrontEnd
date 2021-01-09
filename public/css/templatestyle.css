@@ -12,7 +12,7 @@
 
 /*              Estilo de botones          */
 .btn {
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 .btn-info, .btn-danger
 {
@@ -91,6 +91,8 @@
 body {
   overflow-x: hidden;
   background-color:#9c4f00;
+  margin: 0px;
+  padding: 0px;
 }
 
 #inputtitulo
