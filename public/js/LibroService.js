@@ -47,9 +47,9 @@ export function mostrardatos(lista) {
       <h4>${fila.autor}</h4>
       <h5>${fila.editorial}</h5>
 
-      <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn   " value="Alquilar"></input>
+      <input type="button" id="${fila.isbn}" name="btnalquiler" class="btn" value="Alquilar"></input>
      <br> </br>
-      <input type="button" id="${fila.isbn}"  class="btn " name="btnreserva" value="Reservar"></input> `;
+      <input type="button" id="${fila.isbn}"  class="btn" name="btnreserva" value="Reservar"></input> `;
 
 
       if (place != null) {
@@ -68,24 +68,25 @@ export function mostrardatos(lista) {
 }
 
 export function mostrarlibro(lista) {
-  const place = document.getElementById("tbody");
+  const place = document.getElementById("articles");
 
   while (place.hasChildNodes()) {
     place.removeChild(place.firstChild);
   }
 
   for (const item of lista) {
-    const element = document.createElement("tr");
+    const element = document.createElement("div");
 
     element.innerHTML = `                                     
-  <th class="filalibroindex" scope="row">${item.isbn}</th>
-  <td class="filalibroindex">${item.titulo}</td>
-  <td class="filalibroindex">${item.autor}</td>
-  <td class="filalibroindex">${item.editorial}</td>
-  <td class="filalibroindex"><img id="imagen" src="${item.imagen}" onerror="this.src='../images/defaultbook.jfif'"></td>
-  <td class="filalibroindex"> <input type="button" id="${item.isbn}" class="btn btn-lg btn-primary" name="btnalquiler" value="Alquilar"></input>
-  <input type="button" id="${item.isbn}"  class="btn btn-secondary btn-lg " name="btnreserva" value="Reservar"></input> </td>
-  `;
+    <article class="article-item">
+    <div class="image-space"> <img class="image-libro" src="${item.imagen}" alt=""></div>
+    <h2>${item.titulo}</h2>
+    <h4>${item.autor}</h4>
+    <h5>${item.editorial}</h5>
+
+    <input type="button" id="${item.isbn}" name="btnalquiler" class="btn   " value="Alquilar"></input>
+   <br> </br>
+    <input type="button" id="${item.isbn}"  class="btn " name="btnreserva" value="Reservar"></input> `;
     place.appendChild(element);
     if (item.stock < 1) {
       var btnreserva = (document.querySelector(
