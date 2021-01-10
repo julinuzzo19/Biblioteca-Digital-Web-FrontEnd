@@ -30,10 +30,6 @@
   height: 150px;
   width: 150px;
 }
-.image-libro {
-  height: 154px;
-  width: 150px;
-}
 
 #articles-reservas {
   display: block;
@@ -56,15 +52,20 @@
   font-weight: bold;
   font-size: x-large;
 }
+.subtitlerow {
+  margin-left: 48px;
+  margin-right: 54px;
+}
 
 .article-item-order {
   display: block;
-  border: rgb(90, 45, 0) solid 3px;
   height: 160px;
   background-color: hsl(30, 70%, 52%);
   margin-bottom: 6px;
   padding: 0px;
   width: 600px;
+  border: rgb(90, 45, 0) solid 3px;
+  border-radius: 2em;
 }
 .article-item-order h2 /* Titulo */ {
   color: rgb(90, 45, 0);

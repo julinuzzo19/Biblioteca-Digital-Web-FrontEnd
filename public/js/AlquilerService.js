@@ -26,12 +26,12 @@ export function GetAlquiler(clienteid) {
 export function MostrarAlquileres(lista) {
   for (let i of lista) {
     if (i.fechaReserva == "") {
-      const place = document.getElementById("articles-reservas");
+      const place = document.getElementById("articles-alquileres");
       const element = document.createElement("div");
       var fila = i;
 
-      var fechaalquiler = fila.fechaAlquiler.substring(0, 10);
-      var fechadevolucion = fila.fechaDevolucion.substring(0, 10);
+      var fechaalquiler = fila.fechaAlquiler.substring(0, 9);
+      var fechadevolucion = fila.fechaDevolucion.substring(0, 9);
 
       element.innerHTML = `                                     
      <div class="row">
@@ -39,8 +39,9 @@ export function MostrarAlquileres(lista) {
       <article class="article-item-order">
      <div class="image-space"> <img class="image-libro" src="${i.imagen}" alt=""></div>
       <h2>${i.titulo}</h2>
-      <h4>${fechadevolucion}</h4>
-      <h5>${fechaalquiler}</h5>
+      <h3>${i.autor}</h3>
+      <h5>Fecha de alquiler: ${fechaalquiler}</h5>
+      <h5>Fecha de devolución: ${fechadevolucion}</h5>
       </articles> 
       </div>
       </div>
@@ -50,10 +51,10 @@ export function MostrarAlquileres(lista) {
         place.appendChild(element);
       }
     } else {
-      const place = document.getElementById("articles-alquileres");
+      const place = document.getElementById("articles-reservas");
       const element = document.createElement("div");
       var fila = i;
-      var fechareserva = fila.fechaReserva.substring(0, 10);
+      var fechareserva = fila.fechaReserva.substring(0, 9);
 
       element.innerHTML = ` 
       <div class="row">
@@ -61,7 +62,8 @@ export function MostrarAlquileres(lista) {
       <article class="article-item-order">
       <div class="image-space"> <img class="image-libro" src="${i.imagen}" alt=""></div>
       <h2>${i.titulo}</h2>
-      <h4>${fechareserva}</h4>
+      <h3>${i.autor}</h3>
+      <h5> Fecha de reserva: ${fechareserva}</h5>
       </articles>  
       </div> 
       </div>

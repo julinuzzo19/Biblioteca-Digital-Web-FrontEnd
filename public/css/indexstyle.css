@@ -57,20 +57,17 @@
   margin-right: 20px;
   height: 150px;
   width: 150px;
+
 }
-.image-libro {
-  height: 154px;
-  width: 150px;
-  
-}
+
 .article-item {
   display: block;
-  border: rgb(90, 45, 0) solid 3px;
   height: 160px;
   background-color: hsl(30, 70%, 52%);
   margin-bottom: 6px;
-  padding: 0px;
-  
+
+  border: rgb(90, 45, 0) solid 3px;
+  border-radius: 2em;
 }
 .article-item h2 /* Titulo */ {
   color: rgb(90, 45, 0);
@@ -78,8 +75,6 @@
 }
 .article-item h4 /* Autor */ {
   margin-bottom: 10px;
-}
-.article-item h5 /* Editorial */ {
 }
 .article-item .btn {
   float: right;

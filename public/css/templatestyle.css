@@ -88,3 +88,8 @@ body {
 #inputtitulo {
   color: #9c4f00 !important;
 }
+.image-libro {
+  height: 154px;
+  width: 150px;
+  border-radius: 1.8em;
+}
