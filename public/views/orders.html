@@ -23,9 +23,7 @@
         </div>
 
         <div class="divsidetitle col-2 text-center container-fluid">
-          <h3 id="h3title" class="titlecliente pt-5  ml-5 pl-4">
-            Bienvenido
-          </h3>
+          <h3 id="h3title" class="titlecliente pt-5 ml-5 pl-4">Bienvenido</h3>
         </div>
         <div class="col-2 text-center pt-3 mt-3">
           <button type="button" class="btn btn-info w-75">
@@ -57,7 +55,6 @@
                 ></strong
               >
             </li>
-          
           </ul>
         </div>
       </nav>
@@ -65,29 +62,34 @@
 
     <div><h1 class="infopaginaorders">Mis pedidos</h1></div>
 
-    <div id="container-orders">
-      <h2 class="orderstitle">Mis Alquileres</h2>
-
-      <div id="articles-alquileres">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="orderstitle">Mis Alquileres</h2>
+      </div>
+      <div class="col-6"><h2 class="orderstitle">Mis Reservas</h2></div>
+    </div>
+       <!--LIMPIAR FLOTADOS-->
+       <div class="clearfix"></div>
+    <!-- Fin row -->
+    <div class="row">
+    <div class="col-5">
+      <div id="articles-alquileres" >
         <!-- Articulos alquileres  -->
       </div>
     </div>
 
-    <div id="container-medium"></div>
+   
 
-    <div id="container-md-orders">
-      <h2 class="orderstitle">Mis Reservas</h2>
+    <div class="col-5">
       <div id="articles-reservas">
         <!-- Articulos reservas  -->
       </div>
     </div>
-
-    <div id="divfooter">
-      <footer class="footer">
-        <p>Municipalidad Carmen de Areco</p>
-        <p>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</p>
-      </footer>
-    </div>
+  </div>
+    <footer class="footer">
+      <p>Municipalidad Carmen de Areco</p>
+      <p>Copyright 2007-2020 by DigitalWebs. All Rights Reserved.</p>
+    </footer>
 
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/LibroService.js"></script>

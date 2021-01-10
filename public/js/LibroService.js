@@ -86,7 +86,8 @@ export function mostrarlibro(lista) {
 
     <input type="button" id="${item.isbn}" name="btnalquiler" class="btn   " value="Alquilar"></input>
    <br> </br>
-    <input type="button" id="${item.isbn}"  class="btn " name="btnreserva" value="Reservar"></input> `;
+    <input type="button" id="${item.isbn}"  class="btn " name="btnreserva" value="Reservar"></input> 
+    </article>`;
     place.appendChild(element);
     if (item.stock < 1) {
       var btnreserva = (document.querySelector(

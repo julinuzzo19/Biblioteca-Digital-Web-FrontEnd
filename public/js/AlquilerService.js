@@ -26,37 +26,45 @@ export function GetAlquiler(clienteid) {
 export function MostrarAlquileres(lista) {
   for (let i of lista) {
     if (i.fechaReserva == "") {
-      const place = document.getElementById("tbodyalquiler");
-      const element = document.createElement("tr");
+      const place = document.getElementById("articles-reservas");
+      const element = document.createElement("div");
       var fila = i;
 
       var fechaalquiler = fila.fechaAlquiler.substring(0, 10);
       var fechadevolucion = fila.fechaDevolucion.substring(0, 10);
 
       element.innerHTML = `                                     
-        <th class="filalibroordersalquiler" scope="row">${fila.libroISBN}</th>      
-            <td class="filalibroordersalquiler">${fila.titulo}</td>     
-            <td class="filalibroordersalquiler">${fila.autor}</td>
-            <td class="filalibroordersalquiler">${fechaalquiler}</td>
-            <td class="filalibroordersalquiler">${fechadevolucion}</td>
-               
+     <div class="row">
+     <div class="col-6">
+      <article class="article-item-order">
+     <div class="image-space"> <img class="image-libro" src="${i.imagen}" alt=""></div>
+      <h2>${i.titulo}</h2>
+      <h4>${fechadevolucion}</h4>
+      <h5>${fechaalquiler}</h5>
+      </articles> 
+      </div>
+      </div>
         `;
 
       if (place != null) {
         place.appendChild(element);
       }
     } else {
-      const place = document.getElementById("tbodyreserva");
-      const element = document.createElement("tr");
+      const place = document.getElementById("articles-alquileres");
+      const element = document.createElement("div");
       var fila = i;
       var fechareserva = fila.fechaReserva.substring(0, 10);
 
-      element.innerHTML = `                                     
-            <th class="filalibroordersreserva" scope="row">${fila.libroISBN}</th>      
-                <td class="filalibroordersreserva">${fila.titulo}</td>     
-                <td class="filalibroordersreserva">${fila.autor}</td>
-                <td class="filalibroordersreserva">${fechareserva}</td>
-                   
+      element.innerHTML = ` 
+      <div class="row">
+      <div class="col-6">                                    
+      <article class="article-item-order">
+      <div class="image-space"> <img class="image-libro" src="${i.imagen}" alt=""></div>
+      <h2>${i.titulo}</h2>
+      <h4>${fechareserva}</h4>
+      </articles>  
+      </div> 
+      </div>
             `;
       if (place != null) {
         place.appendChild(element);

@@ -1,73 +1,7 @@
 /* Page Orders */
-#container-orders {
-  background-color: blanchedalmond;
-  height: 400px;
-  width: 48%;
-  float: left;
-  margin-left: 20px;
-  overflow-y: auto;
-}
-#container-md-orders {
-  height: 400px;
-  width: 48%;
-  background-color: blanchedalmond;
-  float: right;
-  margin-right: 20px;
-  overflow-y: auto;
-}
-#container-medium {
-  width: 1%;
-  height: 400px;
-  display: inline-block;
-}
-.orderstitle {
-  text-align: center;
-  margin-top: 20px;
-  font-family: cursive;
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.tableordersalquiler {
-  width: 95%;
-  margin-left: 20px;
-  border: 3px solid #9c4f00;
-}
-.tableordersreserva {
-  width: 95%;
-  margin-left: 20px;
-  border: 3px solid #9c4f00;
-}
-.headfilaordersreserva {
-  font-size: larger;
-  font-family: cursive;
-  padding: 10px;
-  text-align: center;
-  border: 3px solid hsl(30, 86%, 26%);
-
-}
-.headfilaordersalquiler {
-  font-size: larger;
-  font-family: cursive;
-  padding: 10px;
-  text-align: center;
-  border: 3px solid hsl(30, 86%, 26%);
-}
-.filalibroordersalquiler {
-  font-size: large;
-  font-family: cursive;
-  font-weight: 500;
-  padding: 15px;
-  text-align: center;
-  border: 3px solid hsl(30, 86%, 26%);
-}
-.filalibroordersreserva {
-  font-size: large;
-  font-weight: 500;
-  font-family: cursive;
-  padding: 15px;
-  text-align: center;
-  border: 3px solid hsl(30, 86%, 26%);
+.clearfix {
+  clear: both;
+  float: none;
 }
 #imagenorder {
   height: 235px;
@@ -89,4 +23,53 @@
   background-color: #9c4f00;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+.image-space {
+  float: left;
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+.image-libro {
+  height: 154px;
+  width: 150px;
+}
+
+#articles-reservas {
+  display: block;
+  width: 1200px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
+
+#articles-alquileres {
+  display: block;
+  width: 1200px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.orderstitle {
+  text-align: center;
+  margin-top: 20px;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.article-item-order {
+  display: block;
+  border: rgb(90, 45, 0) solid 3px;
+  height: 160px;
+  background-color: hsl(30, 70%, 52%);
+  margin-bottom: 6px;
+  padding: 0px;
+  width: 600px;
+}
+.article-item-order h2 /* Titulo */ {
+  color: rgb(90, 45, 0);
+  border-bottom: rgb(90, 45, 0) solid 2px;
+}
+.article-item h4 /* Autor */ {
+  margin-bottom: 10px;
 }
